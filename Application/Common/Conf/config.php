@@ -15,10 +15,10 @@ return array(
     
     /* 数据库配置 */
     'DB_TYPE' => 'mysql', // 数据库类型
-    'DB_HOST' => '101.201.211.227', // 服务器地址
-    'DB_NAME' => 'budaohuaxia', // 数据库名
-    'DB_USER' => 'budaohuaxia_user', // 用户名
-    'DB_PWD' => 'GaGVw8TFxw8tp', // 密码
+    'DB_HOST' => '127.0.0.1', // 服务器地址
+    'DB_NAME' => 'myoa', // 数据库名
+    'DB_USER' => 'root', // 用户名
+    'DB_PWD' => 'root', // 密码
     'DB_PORT' => '3306', // 端口
     'DB_PREFIX' => 'cjnet_'
 ) // 数据库表前缀
