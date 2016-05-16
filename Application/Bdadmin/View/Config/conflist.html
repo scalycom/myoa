@@ -1,0 +1,80 @@
+
+<include file="Public:base" />
+<meta charset="utf-8">
+<body>
+
+	<include file="Public:position" />
+
+	<div class="page-container">
+
+		<div class="cl pd-5 bg-1 bk-gray mt-20">
+			<span class="l"><a href="javascript:;" onclick="datadel()"
+				class="btn btn-danger radius"><i class="Hui-iconfont">&#xe6e2;</i>
+					批量删除</a> <a class="btn btn-primary radius" data-title="添加"
+				 onclick="config_edit('添加菜单','{:U('add')}','800')"><i class="Hui-iconfont">&#xe600;</i> 添加</a></span> 
+		</div>
+		<div class="mt-20">
+			<table
+				class="table table-border table-bordered table-bg table-hover table-sort">
+				<thead>
+					<tr class="text-c">
+					
+						<th width="25"><input type="checkbox" ></th>
+						<th width="80">ID</th>
+						<th width="80">名称</th>
+						<th width="80">标题</th>
+						<th width="80">分组</th>
+						<th width="120">类型</th>
+						<th width="120">操作</th>
+						
+					</tr>
+				</thead>
+				<tbody>
+					<notempty name="list">
+				<volist name="list" id="config">
+					<tr class="text-c">
+						<td><input class="ids row-selected" type="checkbox" name="id[]" value="{$config.id}"></td>
+						<td>{$config.id}</td>
+						<td><a  onclick="config_edit('添加菜单','{:U('edit?id='.$config['id'])}','800')" href="javascript:void(0);">{$config.name}</a></td>
+						<td>{$config.title}</td>
+						<td>{$config.group|get_config_group}</td>
+						<td>{$config.type|get_config_type}</td>
+						<td>
+							<a title="编辑" onclick="config_edit('添加菜单','{:U('edit?id='.$config['id'])}','800')" href="javascript:void(0);">编辑</a>
+							<a class="confirm ajax-get" title="删除" href="{:U('del?id='.$config['id'])}">删除</a>
+						</td>
+					</tr>
+					</volist>
+				<else/>
+				<td colspan="6" class="text-center"> aOh! 暂时还没有内容! </td>
+				</notempty>
+				</tbody>
+			</table>
+			
+			   {$_page}
+		</div>
+	</div>
+
+
+	<!-- 底部js引入S-->
+	<include file="Public:script" />
+	<!-- 底部js引入E-->
+<script type="text/javascript" src="__LIB__/datatables/1.10.0/jquery.dataTables.min.js"></script> 
+
+
+	<script type="text/javascript">
+
+		
+		function config_edit(title, url, w, h) {
+			layer_show(title, url, w, h);
+		}
+		
+		
+	</script>
+		
+		
+		
+		
+		
+</body>
+</html>

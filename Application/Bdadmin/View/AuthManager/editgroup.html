@@ -1,0 +1,99 @@
+<!--_meta 作为公共模版分离出去111-->
+
+<include file="Public:base" />
+
+<!--/meta 作为公共模版分离出去-->
+
+<title>用户组</title>
+</head>
+<body>
+	<article class="page-container">
+		<form class="form form-horizontal skin-minimal input" id="fromcreate"
+			method="post">
+
+
+			<div class="row cl">
+				<label class="form-label col-xs-4 col-sm-2">用户组</label>
+
+				<div class="formControls col-xs-8 col-sm-9">
+
+					<input id="auth-title" type="text" name="title"
+						class="text input-text" value="{$auth_group.title}" />
+
+
+				</div>
+			</div>
+
+
+
+
+			<div class="row cl">
+				<label class="form-label col-xs-4 col-sm-2">描述</label>
+
+				<div class="formControls col-xs-8 col-sm-9">
+					
+					<textarea id="auth-description" type="text" class="textarea" name="description">{$auth_group.description}</textarea>
+					
+				</div>
+			</div>
+
+
+
+
+			<div class="row cl">
+				<div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-2">
+
+					<input type="hidden" name="id" value="{$auth_group.id}" />
+					<button class="btn btn-primary radius" type="button"
+						onclick="submit_form();">
+						<i class="Hui-iconfont">&#xe632;</i> 提交
+					</button>
+
+				</div>
+			</div>
+		</form>
+	</article>
+
+	<!-- 底部js引入S-->
+	<include file="Public:script" />
+	<!-- 底部js引入E-->
+
+
+
+	<!--请在下方写此页面业务相关的脚本-->
+
+	<script type="text/javascript">
+
+    	var index = parent.layer.getFrameIndex(window.name);
+
+    	function submit_form(url = "{:U('AuthManager/writeGroup')}") {
+    		$.ajax({
+    			cache : true,
+    			type : "POST",
+    			url : url,
+    			data : $('#fromcreate').serialize(),// 你的formid
+    			async : false,
+    			error : function(request) {
+    				msg_error('网络错误,请稍后重试!');
+    			
+    			},
+    			success : function(data) {
+    				if (data.status == 1) {
+    					
+    					parent.msg_success(data.info);
+    					
+    					parent.ajaxload("{:U('AuthManager/index')}");
+    					
+    					parent.layer.close(index);
+    				} else {
+    					msg_error(data.info);
+    				}
+    			}
+    		});
+
+    	}
+    </script>
+
+	<!--/请在上方写此页面业务相关的脚本-->
+</body>
+</html>

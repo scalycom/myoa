@@ -1,0 +1,78 @@
+<include file="Public:base" />
+<body>
+
+	<include file="Public:position" />
+
+
+	<div class="page-container">
+
+		<div class="cl pd-5 bg-1 bk-gray mt-20">
+			<span class="l"><a href="javascript:;" onclick="datadel()"
+				class="btn btn-danger radius"><i class="Hui-iconfont">&#xe6e2;</i>
+					批量删除</a> <a class="btn btn-primary radius" data-title="添加用户组"
+				onclick="edit('添加用户组','{:U('AuthManager/editGroup')}','800')"><i
+					class="Hui-iconfont">&#xe600;</i> 添加</a> </span> </span>
+			<!-- <span class="r">共有数据：<strong>88</strong> 条
+			</span> -->
+		</div>
+		<div class="mt-20">
+			<table
+				class="table table-border table-bordered table-hover table-bg table-sort">
+				<thead>
+					<tr class="text-c">
+						<th width="25"><input type="checkbox" name="" value=""></th>
+						<th width="60">ID</th>
+						<th width="100">用户组名</th>
+						<th width="40">描述</th>
+						<th width="100">权限管理</th>
+						<th width="40">状态</th>
+						<th width="100">操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<notempty name="_list"> <volist name="_list" id="vo">
+					<tr class="text-c">
+						<td><input type="checkbox" name="id[]" value="{$vo.id}"></td>
+						<td>{$vo.id}</td>
+						<td><a
+							onclick="edit('用户组－{$vo.title}','{:U('AuthManager/editgroup?id='.$vo['id'])}',600)">{$vo.title}</a></td>
+						<td><span>{:mb_strimwidth($vo['description'],0,60,"...","utf-8")}</span></td>
+
+						<td><a
+							onclick="edit('用户组－{$vo.title}','{:U('AuthManager/access?group_name='.$vo['title'].'&group_id='.$vo['id'])}',1000)">修改权限</a></td>
+
+						<td>{$vo.status_text}</td>
+
+
+						<td class="td-manage"><eq name="vo.status" value="1"> <a
+								href="{:U('AuthManager/changeStatus?method=forbidGroup&id='.$vo['id'])}"
+								class="ajax-get">禁用</a> <else /> <a
+								href="{:U('AuthManager/changeStatus?method=resumeGroup&id='.$vo['id'])}"
+								class="ajax-get">启用</a> </eq> <a title="删除"
+							href="{:U('AuthManager/del/id/'.$info['uid'])}"
+							class="ml-5 ajax-get confirm" style="text-decoration: none">删除</a></td>
+
+					</tr>
+					</volist> <else />
+					<td colspan="6" class="text-center">aOh! 暂时还没有内容!</td>
+					</notempty>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+
+
+	<!--_footer 作为公共模版分离出去-->
+	<include file="Public:script" />
+	<!--/_footer /作为公共模版分离出去-->
+
+
+
+	<script type="text/javascript">
+		function edit(title, url, w, h) {
+			layer_show(title, url, w, h);
+		}
+	</script>
+</body>
+</html>

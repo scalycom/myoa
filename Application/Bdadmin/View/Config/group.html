@@ -1,0 +1,125 @@
+﻿<!--_meta 作为公共模版分离出去-->
+<include file="Public:base" />
+<!--/meta 作为公共模版分离出去-->
+
+
+</head>
+<body>
+
+<include file="Public:position" />
+
+<div class="page-container">
+	<form class="form form-horizontal" id="fromcreate">
+		<div id="tab-system" class="HuiTab">
+			<div class="tabBar cl">
+			<volist name="Think.config.CONFIG_GROUP_LIST" id="group">
+			
+			<span>{$group}配置</span>
+		
+			</volist>
+			</div>
+			
+		
+			
+			<volist name="list" id="list">
+			<div class="tabCon">
+			<noempty name="list.list">
+				<volist name="list.list" id="config">
+				<div class="row cl">
+					<label class="form-label col-xs-4 col-sm-2">{$config.title}</label>
+					<div class="formControls col-xs-8 col-sm-9">
+					
+					<switch name="config.type">
+					
+					<case value="0">
+						<input type="text" id="website-title" placeholder="{$config.remark}" name="config[{$config.name}]" value="{$config.value}" class="input-text">
+					</case>
+					
+					<case value="1">
+						<input type="text" id="website-title" placeholder="{$config.remark}" name="config[{$config.name}]" value="{$config.value}" class="input-text">
+					</case>
+					<case value="2">
+						<textarea name="config[{$config.name}]" class="textarea">{$config.value}</textarea>
+					</case>
+				<case value="3">
+						<textarea name="config[{$config.name}]" class="textarea">{$config.value}</textarea>
+					</case>
+					<case value="4">
+			<select name="config[{$config.name}]" class="select">
+				<volist name=":parse_config_attr($config['extra'])" id="vo">
+					<option value="{$key}" <eq name="config.value" value="$key">selected</eq>>{$vo}</option>
+				</volist>
+			</select>
+			</case>
+					
+					</switch>
+					
+					
+					</div>
+				</div>
+			</volist>
+			</noempty>
+			
+			
+			
+			</div>
+			
+			
+			</volist>
+		
+			
+		<div class="row cl" style="padding: 10px;">
+			<div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-2">
+				
+				<button onClick="submit_form();" class="btn btn-primary radius" type="button"><i class="Hui-iconfont">&#xe632;</i> 保存</button>
+				
+			</div>
+		</div>
+	</form>
+</div>
+
+<!--_footer 作为公共模版分离出去-->
+<include file="Public:script" />
+<!--/_footer /作为公共模版分离出去-->
+
+<!--请在下方写此页面业务相关的脚本-->
+<script type="text/javascript">
+$(function(){
+	$('.skin-minimal input').iCheck({
+		checkboxClass: 'icheckbox-blue',
+		radioClass: 'iradio-blue',
+		increaseArea: '20%'
+	});
+	$.Huitab("#tab-system .tabBar span","#tab-system .tabCon","current","click","0");
+});
+
+function submit_form(url = "{:U('Config/save')}") {
+	$.ajax({
+		cache : true,
+		type : "POST",
+		url : url,
+		data : $('#fromcreate').serialize(),// 你的formid
+		async : false,
+		error : function(request) {
+			msg_error('网络错误,请稍后重试!');
+		
+		},
+		success : function(data) {
+			if (data.status == 1) {
+				
+				msg_success(data.info);
+				
+				ajaxload("{:U('')}");
+				
+			
+			} else {
+				msg_error(data.info);
+			}
+		}
+	});
+
+}
+</script>
+<!--/请在上方写此页面业务相关的脚本-->
+</body>
+</html>

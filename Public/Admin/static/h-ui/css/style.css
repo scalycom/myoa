@@ -1,0 +1,9 @@
+@charset "utf-8";
+/* 你自己的样式 */
+.uploadify-button{
+position: relative;
+text-align: center;
+color: #fff;
+cursor: pointer;
+background-color: #27ae60;
+}

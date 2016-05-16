@@ -1,0 +1,85 @@
+<include file="Public:base" />
+<body>
+
+	<include file="Public:position" />
+
+
+	<div class="page-container">
+
+		<div class="cl pd-5 bg-1 bk-gray mt-20">
+			<span class="l"><a href="javascript:;" onclick="datadel()"
+				class="btn btn-danger radius"><i class="Hui-iconfont">&#xe6e2;</i>
+					批量删除</a> <a class="btn btn-primary radius" data-title="添加"
+				onclick="edit('添加管理员','{:U('Aduser/ad_add')}','800')"><i
+					class="Hui-iconfont">&#xe600;</i> 添加</a> </span>
+
+			<!-- <span class="r">共有数据：<strong>88</strong> 条
+			</span> -->
+		</div>
+		<div class="mt-20">
+			<table
+				class="table table-border table-bordered table-hover table-bg table-sort">
+				<thead>
+					<tr class="text-c">
+						<th width="25"><input type="checkbox" name="" value=""></th>
+						<th width="60">ID</th>
+						<th width="100">用户名</th>
+						<th width="40">登录次数</th>
+						<th width="100">最后登录时间</th>
+						<th width="40">状态</th>
+						<th width="100">操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<notempty name="_list"> <volist name="_list" id="vo">
+					<tr class="text-c">
+						<td><input type="checkbox" name="id[]" value="{$vo.ad_id}"></td>
+						<td>{$vo.ad_id}</td>
+						<td><a>{$vo.ad_name}</a></td>
+
+						<td>{$vo.login}</td>
+						<td>{$vo.login_time|date="Y-m-d H:i:s",###}</td>
+						<td>{$vo.status_text}</td>
+
+						<td class="td-manage"><eq name="vo.status" value="1"> <a
+								href="{:U('Aduser/changeStatus?method=forbiduser&id='.$vo['ad_id'])}"
+								class="ajax-get">禁用</a> <else /> <a
+								href="{:U('Aduser/changeStatus?method=resumeuser&id='.$vo['ad_id'])}"
+								class="ajax-get">启用</a> </eq> 
+								
+					<a title="修改密码" onclick="edit('修改密码','{:U('Aduser/ad_edit/id/'.$vo['ad_id'])}','800')"
+							class="ml-5" style="text-decoration: none">修改密码</a>
+					<a title="授权"
+							onclick="edit('用户组授权','{:U('AuthManager/group?ad_id='.$vo['ad_id'])}','800')"
+							class="ml-5 " style="text-decoration: none">授权</a> 
+							
+				   <a title="删除"
+							href="{:U('Aduser/changeStatus?method=deleteuser&id='.$vo['ad_id'])}"
+							class="ml-5 ajax-get confirm" style="text-decoration: none">删除</a>
+
+						</td>
+
+					</tr>
+					</volist> <else />
+					<td colspan="6" class="text-center">aOh! 暂时还没有内容!</td>
+					</notempty>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+
+
+	<!--_footer 作为公共模版分离出去-->
+	<include file="Public:script" />
+	<!--/_footer /作为公共模版分离出去-->
+
+
+
+	<script type="text/javascript">
+		function edit(title, url, w, h) {
+			layer_show(title, url, w, h);
+		}
+	</script>
+</body>
+</html>

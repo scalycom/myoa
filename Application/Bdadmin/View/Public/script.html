@@ -1,0 +1,53 @@
+<script type="text/javascript" src="__LIB__/jquery/1.9.1/jquery.min.js"></script> 
+<script type="text/javascript" src="__LIB__/layer/2.1/layer.js"></script> 
+<script type="text/javascript" src="__LIB__/My97DatePicker/WdatePicker.js"></script> 
+<script type="text/javascript" src="__LIB__/icheck/jquery.icheck.min.js"></script> 
+<script type="text/javascript" src="__LIB__/jquery.validation/1.14.0/jquery.validate.min.js"></script> 
+<script type="text/javascript" src="__LIB__/jquery.validation/1.14.0/validate-methods.js"></script> 
+<script type="text/javascript" src="__LIB__/jquery.validation/1.14.0/messages_zh.min.js"></script> 
+<script type="text/javascript" src="__STATIC__/h-ui/js/H-ui.js"></script> 
+<script type="text/javascript" src="__STATIC__/h-ui/js/H-ui.admin.js"></script> 
+ <script type="text/javascript">
+    (function(){
+        var ThinkPHP = window.Think = {
+            "ROOT"   : "__ROOT__", //当前网站地址
+            "APP"    : "__APP__", //当前项目地址
+            "PUBLIC" : "__PUBLIC__", //项目公共目录地址
+            "DEEP"   : "{:C('URL_PATHINFO_DEPR')}", //PATHINFO分割符
+            "MODEL"  : ["{:C('URL_MODEL')}", "{:C('URL_CASE_INSENSITIVE')}", "{:C('URL_HTML_SUFFIX')}"],
+            "VAR"    : ["{:C('VAR_MODULE')}", "{:C('VAR_CONTROLLER')}", "{:C('VAR_ACTION')}"]
+        }
+   
+        
+    })();
+    
+    
+    function msg_success(data){
+    	layer.msg(data,{icon: 6,time:1000});
+    }
+    
+    function msg_error(data){
+    	layer.msg(data,{icon: 5,time:1000});
+    }
+    
+    
+    function ajaxload(url,waittime=2){
+   	 
+    if(!url){
+    	url ="{:U()}";
+    }
+    	
+   	 var interval = setInterval(function(){
+   	     	var time = --waittime;
+   	     	if(time <= 0) {
+   	     		location.href = url;
+   	     		clearInterval(interval);
+   	     	};
+   	     }, 1000);
+    }
+    
+    
+    
+    </script>
+<script type="text/javascript" src="__ALL__/js/think.js"></script>
+<script type="text/javascript" src="__ALL__/js/common.js"></script>

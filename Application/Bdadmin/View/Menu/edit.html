@@ -1,0 +1,184 @@
+<!--_meta 作为公共模版分离出去-->
+
+<include file="Public:base" />
+
+<!--/meta 作为公共模版分离出去-->
+
+<title>{:isset($info['id'])?'编辑':'新增'}后台菜单</title>
+</head>
+<body>
+	<article class="page-container">
+		<form class="form form-horizontal skin-minimal input" id="fromcreate"
+			method="post">
+			<div class="row cl">
+				<label class="form-label col-xs-4 col-sm-2">标题</label>
+
+				<div class="formControls col-xs-8 col-sm-9">
+					<input type="text" class="input-text" name="title"
+						value="{$info.title|default=''}">
+				</div>
+			</div>
+
+			<div class="row cl">
+				<label class="form-label col-xs-4 col-sm-2">排序</label>
+
+				<div class="formControls col-xs-8 col-sm-9">
+
+					<input type="text" class="input-text" name="sort"
+						value="{$info.sort|default=0}">
+
+				</div>
+			</div>
+
+
+
+
+			<div class="row cl">
+				<label class="form-label col-xs-4 col-sm-2">链接</label>
+
+				<div class="formControls col-xs-8 col-sm-9">
+
+					<input type="text" class="input-text" name="url"
+						value="{$info.url|default=''}">
+
+				</div>
+			</div>
+
+
+
+
+			<div class="row cl">
+
+				<label class="form-label col-xs-4 col-sm-2">上级菜单</label>
+
+				<div class="formControls col-xs-8 col-sm-9">
+					<span class="select-box"> <select name="pid" class="select">
+							<volist name="Menus" id="menu">
+							<option value="{$menu.id}">{$menu.title_show}</option>
+							</volist>
+					</select>
+
+					</span>
+
+				</div>
+			</div>
+
+
+
+
+			<div class="row cl">
+				<label class="form-label col-xs-4 col-sm-2">分组</label>
+
+				<div class="formControls col-xs-8 col-sm-9">
+
+					<input type="text" class="input-text" name="group"
+						value="{$info.group|default=''}">
+
+				</div>
+			</div>
+
+
+			<div class="row cl">
+
+				<label class="form-label col-xs-4 col-sm-2">是否隐藏</label>
+
+				<div class="formControls col-xs-8 col-sm-9">
+
+					<div class="switch size-S">
+						<label class="radio"><input type="radio" name="hide"
+							value="1" />是</label> <label class="radio"><input type="radio"
+							name="hide" value="0" />否</label>
+					</div>
+
+				</div>
+			</div>
+			<div class="row cl">
+
+				<label class="form-label col-xs-4 col-sm-2">仅开发者模式可见<span
+					class="check-tips"></span></label>
+
+				<div class="formControls col-xs-8 col-sm-9">
+
+					<label class="radio"><input type="radio" name="is_dev"
+						value="1">是</label> <label class="radio"><input
+						type="radio" name="is_dev" value="0">否</label>
+
+				</div>
+
+			</div>
+
+
+
+			<div class="row cl">
+				<label class="form-label col-xs-4 col-sm-2">说明：</label>
+
+				<div class="formControls col-xs-8 col-sm-9 skin-minimal">
+					<div class="formControls col-xs-8 col-sm-9">
+						<input type="text" class="input-text" name="tip"
+							value="{$info.tip|default=''}">
+					</div>
+				</div>
+			</div>
+
+
+
+
+			<div class="row cl">
+				<div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-2">
+					<input type="hidden" name="id" value="{$info.id|default=''}">
+
+					<button  class="btn btn-primary radius"
+						type="button" onclick="submit_form();">
+						<i class="Hui-iconfont">&#xe632;</i> 提交
+					</button>
+
+				</div>
+			</div>
+		</form>
+	</article>
+
+	<!-- 底部js引入S-->
+	<include file="Public:script" />
+	<!-- 底部js引入E-->
+
+
+
+	<!--请在下方写此页面业务相关的脚本-->
+
+	<script type="text/javascript">
+        Think.setValue("pid", {$info.pid|default = 0});
+        Think.setValue("hide", {$info.hide|default = 0});
+        Think.setValue("is_dev", {$info.is_dev|default = 0});
+    	var index = parent.layer.getFrameIndex(window.name);
+
+    	function submit_form(url = "{:U('')}") {
+    		$.ajax({
+    			cache : true,
+    			type : "POST",
+    			url : url,
+    			data : $('#fromcreate').serialize(),// 你的formid
+    			async : false,
+    			error : function(request) {
+    				msg_error('网络错误,请稍后重试!');
+    			
+    			},
+    			success : function(data) {
+    				if (data.status == 1) {
+    					
+    					parent.msg_success(data.info);
+    					
+    					parent.ajaxload("{:U('menulist?pid='.$info['pid'])}");
+    					
+    					parent.layer.close(index);
+    				} else {
+    					msg_error(data.info);
+    				}
+    			}
+    		});
+
+    	}
+    </script>
+
+	<!--/请在上方写此页面业务相关的脚本-->
+</body>
+</html>
