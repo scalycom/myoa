@@ -1,14 +1,3 @@
-/* -----------H-ui前端框架-------------
-* H-ui.admin.js v2.4
-* http://www.h-ui.net/
-* Created & Modified by guojunhui
-* Date modified 15:42 2016.03.14
-*
-* Copyright 2013-2016 北京颖杰联创科技有限公司 All rights reserved.
-* Licensed under MIT license.
-* http://opensource.org/licenses/MIT
-*
-*/
 var num=0,oUl=$("#min_title_list"),hide_nav=$("#Hui-tabNav");
 
 /*获取顶部选项卡总长度*/
@@ -56,6 +45,11 @@ function Hui_admin_tab(obj){
 		var _href=$(obj).attr('_href');
 		var _titleName=$(obj).attr("data-title");
 		var topWindow=$(window.parent.document);
+		var is_parent = topWindow.find('#is_parent').val();
+		if(!is_parent){
+			topWindow=$(window.self.document);
+		}
+		
 		var show_navLi=topWindow.find("#min_title_list li");
 		show_navLi.each(function() {
 			if($(this).find('span').attr("data-href")==_href){
@@ -64,13 +58,14 @@ function Hui_admin_tab(obj){
 				return false;
 			}
 		});
+		
 		if(!bStop){
 			creatIframe(_href,_titleName);
 			min_titleList();
-		}
-		else{
+		}else{
 			show_navLi.removeClass("active").eq(bStopIndex).addClass("active");
 			var iframe_box=topWindow.find("#iframe_box");
+			
 			iframe_box.find(".show_iframe").hide().eq(bStopIndex).show().find("iframe").attr("src",_href);
 		}
 	}
@@ -78,11 +73,19 @@ function Hui_admin_tab(obj){
 }
 function min_titleList(){
 	var topWindow=$(window.parent.document);
+	var is_parent = topWindow.find('#is_parent').val();
+	if(!is_parent){
+		topWindow=$(window.self.document);
+	}
 	var show_nav=topWindow.find("#min_title_list");
 	var aLi=show_nav.find("li");
 };
 function creatIframe(href,titleName){
 	var topWindow=$(window.parent.document);
+	var is_parent = topWindow.find('#is_parent').val();
+	if(!is_parent){
+		topWindow=$(window.self.document);
+	}
 	var show_nav=topWindow.find('#min_title_list');
 	show_nav.find('li').removeClass("active");
 	var iframe_box=topWindow.find('#iframe_box');
@@ -92,7 +95,9 @@ function creatIframe(href,titleName){
 		$tabNavWp = topWindow.find(".Hui-tabNav-wp"),
 		$tabNavitem = topWindow.find(".acrossTab li"),
 		$tabNavmore =topWindow.find(".Hui-tabNav-more");
+	
 	if (!$tabNav[0]){return}
+	
 	$tabNavitem.each(function(index, element) {
         taballwidth+=Number(parseFloat($(this).width()+60))
     });
@@ -186,9 +191,10 @@ $(function(){
 	/*选项卡导航*/
 
 	$(".Hui-aside").on("click",".menu_dropdown a",function(){
+		
 		Hui_admin_tab(this);
 	});
-	
+
 	$(document).on("click","#min_title_list li",function(){
 		var bStopIndex=$(this).index();
 		var iframe_box=$("#iframe_box");

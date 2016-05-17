@@ -18,9 +18,9 @@ h4{line-height:30px}
 
 /*页面框架*/
 .Hui-header{position:absolute;top:0; right:0; left:0;height:44px;z-index:999; padding:0 15px}
-.Hui-aside{position: absolute;top:44px;bottom:0;left:0;padding-top:10px;width:199px;z-index:99;overflow:auto; background-color:rgba(238,238,238,0.98);border-right: 1px solid #e5e5e5}
-.Hui-article-box{position: absolute;top:44px;right:0;bottom: 0;left:199px; overflow:hidden; z-index:1; background-color:#fff}
-	.Hui-article{position: absolute;top:34px;bottom:0;left:0; right:0;overflow:auto;z-index:1}
+.Hui-aside{position: absolute;top:0px;bottom:0;left:0;padding-top:10px;width:199px;z-index:99;overflow:auto; background-color:rgba(238,238,238,0.98);border-right: 1px solid #e5e5e5}
+.Hui-article-box{position: absolute;top:0px;right:0;bottom: 0;left:199px; overflow:hidden; z-index:1; background-color:#fff}
+	.Hui-article{position: absolute;top:0px;bottom:0;left:0; right:0;overflow:auto;z-index:1}
 .Hui-container{ padding:45px 0 0}
 .Hui-aside,.Hui-article-box,.dislpayArrow{-moz-transition: all 0.2s ease 0s;-webkit-transition: all 0.2s ease 0s;-ms-transition: all 0.2s ease 0s;-o-transition: all 0.2s ease 0s;transition: all 0.2s ease 0s}
 .big-page .Hui-article-box,.big-page .dislpayArrow,.big-page .breadcrumb{left:0px}
@@ -93,7 +93,7 @@ h4{line-height:30px}
 		.menu_dropdown dt{line-height:44px}
 		.menu_dropdown li,.menu_dropdown dd li,.menu_dropdown dd li a{ line-height:44px}
   .Hui-tabNav{ position:fixed; z-index:998}
-  .Hui-article{ top:44px}
+  .Hui-article{ top:0px}
   .Hui-article-box{ position:static; left:0}
   .Hui-article-box .pd-20{padding:15px}
 		.Hui-article{left:0}

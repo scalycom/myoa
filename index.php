@@ -11,7 +11,7 @@ define('BIND_MODULE','Bdadmin');
  * 应用目录设置
  * 安全期间，建议安装调试完成后移动到非WEB目录
  */
-define ( 'APP_PATH', './Application/' );
+define ( 'APP_PATH', './coa/' );
 
 /**
  * 缓存目录设置
@@ -23,4 +23,4 @@ define ( 'RUNTIME_PATH', './Runtime/' );
  * 引入核心入口
  * ThinkPHP亦可移动到WEB以外的目录
  */
-require './ThinkPHP/ThinkPHP.php';
+require './core/core.php';
