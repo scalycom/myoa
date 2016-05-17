@@ -114,32 +114,38 @@
 
 
 	<!--_footer 作为公共模版分离出去-->
-	<script type="text/javascript" src="/Public/Admin/lib/jquery/1.9.1/jquery.min.js"></script> 
-<script type="text/javascript" src="/Public/Admin/lib/layer/2.1/layer.js"></script> 
-<script type="text/javascript" src="/Public/Admin/lib/My97DatePicker/WdatePicker.js"></script> 
-<script type="text/javascript" src="/Public/Admin/lib/icheck/jquery.icheck.min.js"></script> 
-<script type="text/javascript" src="/Public/Admin/lib/jquery.validation/1.14.0/jquery.validate.min.js"></script> 
-<script type="text/javascript" src="/Public/Admin/lib/jquery.validation/1.14.0/validate-methods.js"></script> 
-<script type="text/javascript" src="/Public/Admin/lib/jquery.validation/1.14.0/messages_zh.min.js"></script> 
-<script type="text/javascript" src="/Public/Admin/static/h-ui/js/H-ui.js"></script> 
-<script type="text/javascript" src="/Public/Admin/static/h-ui/js/H-ui.admin.js"></script> 
- <script type="text/javascript">
-    (function(){
-    	
-        var ThinkPHP = window.Think = {
-            "ROOT"   : "", //当前网站地址
-            "APP"    : "/index.php", //当前项目地址
-            "PUBLIC" : "/Public", //项目公共目录地址
-            "DEEP"   : "<?php echo C('URL_PATHINFO_DEPR');?>", //PATHINFO分割符
-            "MODEL"  : ["<?php echo C('URL_MODEL');?>", "<?php echo C('URL_CASE_INSENSITIVE');?>", "<?php echo C('URL_HTML_SUFFIX');?>"],
-            "VAR"    : ["<?php echo C('VAR_MODULE');?>", "<?php echo C('VAR_CONTROLLER');?>", "<?php echo C('VAR_ACTION');?>"]
-        }
-   
-        
-    })();
+	
+<script>
+(function(){
+	
+    var ThinkPHP = window.Think = {
+        "ROOT"   : "", //当前网站地址
+        "APP"    : "/index.php", //当前项目地址
+        "PUBLIC" : "/Public", //项目公共目录地址
+        "DEEP"   : "<?php echo C('URL_PATHINFO_DEPR');?>", //PATHINFO分割符
+        "MODEL"  : ["<?php echo C('URL_MODEL');?>", "<?php echo C('URL_CASE_INSENSITIVE');?>", "<?php echo C('URL_HTML_SUFFIX');?>"],
+        "VAR"    : ["<?php echo C('VAR_MODULE');?>", "<?php echo C('VAR_CONTROLLER');?>", "<?php echo C('VAR_ACTION');?>"]
+    }
+
     
-    
-    function msg_success(data){
+})();
+</script>
+
+<script type="text/javascript" src="/Public/Admin/lib/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="/Public/Admin/lib/layer/2.1/layer.js"></script>
+<script type="text/javascript"
+	src="/Public/Admin/lib/My97DatePicker/WdatePicker.js"></script>
+<script type="text/javascript" src="/Public/Admin/lib/icheck/jquery.icheck.min.js"></script>
+<script type="text/javascript"
+	src="/Public/Admin/lib/jquery.validation/1.14.0/jquery.validate.min.js"></script>
+<script type="text/javascript"
+	src="/Public/Admin/lib/jquery.validation/1.14.0/validate-methods.js"></script>
+<script type="text/javascript"
+	src="/Public/Admin/lib/jquery.validation/1.14.0/messages_zh.min.js"></script>
+<script type="text/javascript" src="/Public/Admin/static/h-ui/js/H-ui.js"></script>
+<script type="text/javascript" src="/Public/Admin/static/h-ui/js/H-ui.admin.js"></script>
+<script type="text/javascript">
+	function msg_success(data){
     	layer.msg(data,{icon: 6,time:1000});
     }
     
@@ -148,8 +154,10 @@
     }
     
     
-    function ajaxload(url,waittime=2){
-   	 
+    function ajaxload(url,waittime){
+   	if(!waittime){
+   		waittime=2;
+   	}
     if(!url){
     	url ="<?php echo U();?>";
     }

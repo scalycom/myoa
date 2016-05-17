@@ -8,6 +8,10 @@ class ConfigController extends CommonController
 
     public function index()
     {
+        $menu = session('ADMIN_MENU_LIST');
+        $child = $menu[CONTROLLER_NAME]['child'];
+        $child = current($child);
+        $this->assign('first_menu',$child[0]);
         $this->display();
     }
 

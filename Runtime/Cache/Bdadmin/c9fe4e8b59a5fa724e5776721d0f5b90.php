@@ -29,7 +29,6 @@
 <meta charset="utf-8">
 <body>
 
-
 <aside class="Hui-aside">
 	<input runat="server" id="divScrollValue" type="hidden" value="" />
 	<div class="menu_dropdown bk_2">
@@ -59,52 +58,55 @@
 	<a class="pngfix" href="javascript:void(0);"
 		onClick="displaynavbar(this)"></a>
 </div>
-
+<input type="hidden" id="is_parent" value="1" />
 <section class="Hui-article-box">
 	<div id="Hui-tabNav" class="Hui-tabNav hidden-xs" style="display:none">
 		<div class="Hui-tabNav-wp">
 			<ul id="min_title_list" class="acrossTab cl">
-				<li class="active"><span title="用户组列表" data-href="<?php echo U('AuthManager/index');?>">用户组列表</span><em></em></li>
+				<li class="active"><span title="<?php echo ($first_menu["title"]); ?>" data-href="<?php echo (U($first_menu["url"])); ?>" ><?php echo ($first_meun["title"]); ?></span><em></em></li>
 			</ul>
 		</div>
-		<div class="Hui-tabNav-more btn-group"><a id="js-tabNav-prev" class="btn radius btn-default size-S" href="javascript:;"><i class="Hui-iconfont">&#xe6d4;</i></a><a id="js-tabNav-next" class="btn radius btn-default size-S" href="javascript:;"><i class="Hui-iconfont">&#xe6d7;</i></a></div>
 	</div>
 	<div id="iframe_box" class="Hui-article">
 		<div class="show_iframe">
 			<div style="display:none" class="loading"></div>
-			<iframe scrolling="yes" frameborder="0" src="<?php echo U('AuthManager/index');?>"></iframe>
+			<iframe scrolling="yes" frameborder="0" src="<?php echo (U($first_menu["url"])); ?>"></iframe>
 		</div>
 	</div>
 </section>
 
 
-<!-- 底部js引入S-->
-<script type="text/javascript" src="/Public/Admin/lib/jquery/1.9.1/jquery.min.js"></script> 
-<script type="text/javascript" src="/Public/Admin/lib/layer/2.1/layer.js"></script> 
-<script type="text/javascript" src="/Public/Admin/lib/My97DatePicker/WdatePicker.js"></script> 
-<script type="text/javascript" src="/Public/Admin/lib/icheck/jquery.icheck.min.js"></script> 
-<script type="text/javascript" src="/Public/Admin/lib/jquery.validation/1.14.0/jquery.validate.min.js"></script> 
-<script type="text/javascript" src="/Public/Admin/lib/jquery.validation/1.14.0/validate-methods.js"></script> 
-<script type="text/javascript" src="/Public/Admin/lib/jquery.validation/1.14.0/messages_zh.min.js"></script> 
-<script type="text/javascript" src="/Public/Admin/static/h-ui/js/H-ui.js"></script> 
-<script type="text/javascript" src="/Public/Admin/static/h-ui/js/H-ui.admin.js"></script> 
- <script type="text/javascript">
-    (function(){
-    	
-        var ThinkPHP = window.Think = {
-            "ROOT"   : "", //当前网站地址
-            "APP"    : "/index.php", //当前项目地址
-            "PUBLIC" : "/Public", //项目公共目录地址
-            "DEEP"   : "<?php echo C('URL_PATHINFO_DEPR');?>", //PATHINFO分割符
-            "MODEL"  : ["<?php echo C('URL_MODEL');?>", "<?php echo C('URL_CASE_INSENSITIVE');?>", "<?php echo C('URL_HTML_SUFFIX');?>"],
-            "VAR"    : ["<?php echo C('VAR_MODULE');?>", "<?php echo C('VAR_CONTROLLER');?>", "<?php echo C('VAR_ACTION');?>"]
-        }
-   
-        
-    })();
+<script>
+(function(){
+	
+    var ThinkPHP = window.Think = {
+        "ROOT"   : "", //当前网站地址
+        "APP"    : "/index.php", //当前项目地址
+        "PUBLIC" : "/Public", //项目公共目录地址
+        "DEEP"   : "<?php echo C('URL_PATHINFO_DEPR');?>", //PATHINFO分割符
+        "MODEL"  : ["<?php echo C('URL_MODEL');?>", "<?php echo C('URL_CASE_INSENSITIVE');?>", "<?php echo C('URL_HTML_SUFFIX');?>"],
+        "VAR"    : ["<?php echo C('VAR_MODULE');?>", "<?php echo C('VAR_CONTROLLER');?>", "<?php echo C('VAR_ACTION');?>"]
+    }
+
     
-    
-    function msg_success(data){
+})();
+</script>
+
+<script type="text/javascript" src="/Public/Admin/lib/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="/Public/Admin/lib/layer/2.1/layer.js"></script>
+<script type="text/javascript"
+	src="/Public/Admin/lib/My97DatePicker/WdatePicker.js"></script>
+<script type="text/javascript" src="/Public/Admin/lib/icheck/jquery.icheck.min.js"></script>
+<script type="text/javascript"
+	src="/Public/Admin/lib/jquery.validation/1.14.0/jquery.validate.min.js"></script>
+<script type="text/javascript"
+	src="/Public/Admin/lib/jquery.validation/1.14.0/validate-methods.js"></script>
+<script type="text/javascript"
+	src="/Public/Admin/lib/jquery.validation/1.14.0/messages_zh.min.js"></script>
+<script type="text/javascript" src="/Public/Admin/static/h-ui/js/H-ui.js"></script>
+<script type="text/javascript" src="/Public/Admin/static/h-ui/js/H-ui.admin.js"></script>
+<script type="text/javascript">
+	function msg_success(data){
     	layer.msg(data,{icon: 6,time:1000});
     }
     
@@ -113,8 +115,10 @@
     }
     
     
-    function ajaxload(url,waittime=2){
-   	 
+    function ajaxload(url,waittime){
+   	if(!waittime){
+   		waittime=2;
+   	}
     if(!url){
     	url ="<?php echo U();?>";
     }
@@ -133,10 +137,5 @@
     </script>
 <script type="text/javascript" src="/Public/All/js/think.js"></script>
 <script type="text/javascript" src="/Public/All/js/common.js"></script>
-<!-- 底部js引入E-->
-
 </body>
-
-
-
 </html>

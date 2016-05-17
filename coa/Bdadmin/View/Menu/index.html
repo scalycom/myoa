@@ -9,14 +9,14 @@
 	<div id="Hui-tabNav" class="Hui-tabNav hidden-xs" style="display:none">
 		<div class="Hui-tabNav-wp">
 			<ul id="min_title_list" class="acrossTab cl">
-				<li class="active"><span title="菜单设置" data-href="{:U('Menu/menulist')}" >菜单设置</span><em></em></li>
+				<li class="active"><span title="{$first_menu.title}" data-href="{$first_menu.url|U}" >{$first_meun.title}</span><em></em></li>
 			</ul>
 		</div>
 	</div>
 	<div id="iframe_box" class="Hui-article">
 		<div class="show_iframe">
 			<div style="display:none" class="loading"></div>
-			<iframe scrolling="yes" frameborder="0" src="{:U('Menu/menulist')}"></iframe>
+			<iframe scrolling="yes" frameborder="0" src="{$first_menu.url|U}"></iframe>
 		</div>
 	</div>
 </section>

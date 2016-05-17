@@ -163,7 +163,10 @@
 		
 		
 		//不能用submit，有冲突
-		function submit_form(url = "{:U('AuthManager/writeGroup')}") {
+		function submit_form(url) {
+			if(!url){
+				url="{:U('AuthManager/writeGroup')}";
+			}
 			$.ajax({
 				cache : true,
 				type : "POST",

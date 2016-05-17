@@ -198,7 +198,10 @@
         Think.setValue("is_dev", {$info.is_dev|default = 0});
     	var index = parent.layer.getFrameIndex(window.name);
 
-    	function submit_form(url = "{:U('')}") {
+    	function submit_form(url) {
+    		if(!url){
+    			url="{:U('')}";
+    		}
     		$.ajax({
     			cache : true,
     			type : "POST",

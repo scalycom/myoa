@@ -126,6 +126,10 @@ class AuthManagerController extends CommonController
 
     //权限管理框架
     public function frame(){
+        $menu = session('ADMIN_MENU_LIST');
+        $child = $menu[CONTROLLER_NAME]['child'];
+        $child = current($child);
+        $this->assign('first_menu',$child[0]);
         $this->display();
     }
     

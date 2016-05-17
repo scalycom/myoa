@@ -93,7 +93,10 @@ $(function(){
 	$.Huitab("#tab-system .tabBar span","#tab-system .tabCon","current","click","0");
 });
 
-function submit_form(url = "{:U('Config/save')}") {
+function submit_form(url) {
+	if(!url){
+		url = "{:U('Config/save')}";
+	}
 	$.ajax({
 		cache : true,
 		type : "POST",

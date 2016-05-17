@@ -1348,3 +1348,1364 @@ INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000318s ]
 
+[ 2016-05-17T18:34:00+08:00 ] ::1 /index.php/Menu/add/pid/0.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
+
+[ 2016-05-17T18:34:01+08:00 ] ::1 /index.php/Menu/add/pid/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000346s ]
+
+[ 2016-05-17T18:37:45+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000315s ]
+
+[ 2016-05-17T18:37:45+08:00 ] 127.0.0.1 /index.php/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000316s ]
+
+[ 2016-05-17T18:37:48+08:00 ] 127.0.0.1 /index.php/Public/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000357s ]
+
+[ 2016-05-17T18:38:26+08:00 ] 127.0.0.1 /index.php/Public/verify.html?0.5219786057714373
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000328s ]
+
+[ 2016-05-17T18:38:44+08:00 ] 127.0.0.1 /index.php/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000347s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000399s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000449s ]
+SQL: SHOW COLUMNS FROM `cjnet_aduser` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `cjnet_aduser` WHERE `ad_name` = 'CJadmin' AND `ad_pass` = 'a8b0b2c84c393e13fdbb96afb2a4a3a8' AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cjnet_aduser` [ RunTime:0.0009s ]
+SQL: SELECT `ad_id`,`ad_name`,`ad_pass`,`openid`,`create_time`,`login_ip`,`login_time`,`status`,`login`,`type` FROM `cjnet_aduser` WHERE `ad_id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `cjnet_aduser` SET `login`=`login`+1,`login_time`='1463481524',`login_ip`='2130706433' WHERE `ad_id` = 1 [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cjnet_action` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cjnet_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2016-05-17T18:38:44+08:00 ] 127.0.0.1 /index.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000583s ]
+
+[ 2016-05-17T18:38:53+08:00 ] 127.0.0.1 /index.php/Index/images/transparent.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000295s ]
+
+[ 2016-05-17T18:38:53+08:00 ] 127.0.0.1 /index.php/AuthManager/frame.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000331s ]
+
+[ 2016-05-17T18:38:54+08:00 ] 127.0.0.1 /index.php/AuthManager/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000299s ]
+
+[ 2016-05-17T18:39:03+08:00 ] 127.0.0.1 /index.php/AuthManager/editGroup.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000331s ]
+
+[ 2016-05-17T18:39:22+08:00 ] 127.0.0.1 /index.php/Index/images/transparent.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000330s ]
+
+[ 2016-05-17T18:39:22+08:00 ] 127.0.0.1 /index.php/AuthManager/frame.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000304s ]
+
+[ 2016-05-17T18:39:23+08:00 ] 127.0.0.1 /index.php/AuthManager/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000305s ]
+
+[ 2016-05-17T18:39:24+08:00 ] 127.0.0.1 /index.php/AuthManager/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000302s ]
+
+[ 2016-05-17T18:39:25+08:00 ] 127.0.0.1 /index.php/AuthManager/editGroup.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000663s ]
+
+[ 2016-05-17T18:40:00+08:00 ] 127.0.0.1 /index.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000307s ]
+
+[ 2016-05-17T18:40:00+08:00 ] 127.0.0.1 /index.php/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000309s ]
+
+[ 2016-05-17T18:40:02+08:00 ] 127.0.0.1 /index.php/Public/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000351s ]
+
+[ 2016-05-17T18:40:21+08:00 ] 127.0.0.1 /index.php/Public/verify.html?0.6402026695950588
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000353s ]
+
+[ 2016-05-17T18:40:22+08:00 ] 127.0.0.1 /index.php/Public/verify.html?0.6402026695950588?0.25937736343184525
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000327s ]
+
+[ 2016-05-17T18:40:26+08:00 ] 127.0.0.1 /index.php/Public/verify.html?0.6402026695950588?0.25937736343184525?0.8759651081744322?0.5846150288991822?0.6656158267510213?0.2698611432650838?0.8433474952189339
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000366s ]
+
+[ 2016-05-17T18:40:31+08:00 ] 127.0.0.1 /index.php/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000322s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000423s ]
+SQL: SHOW COLUMNS FROM `cjnet_aduser` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `cjnet_aduser` WHERE `ad_name` = 'CJadmin' AND `ad_pass` = 'a8b0b2c84c393e13fdbb96afb2a4a3a8' AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cjnet_aduser` [ RunTime:0.0009s ]
+SQL: SELECT `ad_id`,`ad_name`,`ad_pass`,`openid`,`create_time`,`login_ip`,`login_time`,`status`,`login`,`type` FROM `cjnet_aduser` WHERE `ad_id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `cjnet_aduser` SET `login`=`login`+1,`login_time`='1463481631',`login_ip`='2130706433' WHERE `ad_id` = 1 [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cjnet_action` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `cjnet_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2016-05-17T18:40:32+08:00 ] 127.0.0.1 /index.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000318s ]
+
+[ 2016-05-17T18:40:36+08:00 ] 127.0.0.1 /index.php/Index/images/transparent.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000305s ]
+
+[ 2016-05-17T18:40:36+08:00 ] 127.0.0.1 /index.php/Config/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000294s ]
+
+[ 2016-05-17T18:40:37+08:00 ] 127.0.0.1 /index.php/Config/group.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000356s ]
+
+[ 2016-05-17T18:40:42+08:00 ] 127.0.0.1 /index.php/Config/conflist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000306s ]
+
+[ 2016-05-17T18:40:43+08:00 ] 127.0.0.1 /index.php/Config/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000320s ]
+
+[ 2016-05-17T18:41:01+08:00 ] 127.0.0.1 /index.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+
+[ 2016-05-17T18:41:01+08:00 ] 127.0.0.1 /index.php/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000390s ]
+
+[ 2016-05-17T18:41:01+08:00 ] 127.0.0.1 /index.php/Public/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000329s ]
+
+[ 2016-05-17T18:41:14+08:00 ] 127.0.0.1 /index.php/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000345s ]
+
+[ 2016-05-17T18:41:28+08:00 ] 127.0.0.1 /index.php/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000304s ]
+
+[ 2016-05-17T18:41:40+08:00 ] 127.0.0.1 /index.php/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000312s ]
+
+[ 2016-05-17T18:42:14+08:00 ] 127.0.0.1 /index.php/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000309s ]
+
+[ 2016-05-17T18:42:21+08:00 ] 127.0.0.1 /index.php/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
+
+[ 2016-05-17T18:42:21+08:00 ] 127.0.0.1 /index.php/Public/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000315s ]
+
+[ 2016-05-17T18:42:34+08:00 ] 127.0.0.1 /index.php/Public/verify.html?0.7313633929006755?0.49751874152570963
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000623s ]
+
+[ 2016-05-17T18:42:35+08:00 ] 127.0.0.1 /index.php/Public/verify.html?0.7313633929006755?0.49751874152570963?0.3573054780717939
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000297s ]
+
+[ 2016-05-17T18:42:40+08:00 ] 127.0.0.1 /index.php/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000335s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000378s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000427s ]
+SQL: SHOW COLUMNS FROM `cjnet_aduser` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `cjnet_aduser` WHERE `ad_name` = 'CJadmin' AND `ad_pass` = 'a8b0b2c84c393e13fdbb96afb2a4a3a8' AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cjnet_aduser` [ RunTime:0.0009s ]
+SQL: SELECT `ad_id`,`ad_name`,`ad_pass`,`openid`,`create_time`,`login_ip`,`login_time`,`status`,`login`,`type` FROM `cjnet_aduser` WHERE `ad_id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `cjnet_aduser` SET `login`=`login`+1,`login_time`='1463481760',`login_ip`='2130706433' WHERE `ad_id` = 1 [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cjnet_action` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cjnet_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2016-05-17T18:42:40+08:00 ] 127.0.0.1 /index.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000310s ]
+
+[ 2016-05-17T18:42:45+08:00 ] 127.0.0.1 /index.php/Index/images/transparent.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000435s ]
+
+[ 2016-05-17T18:42:45+08:00 ] 127.0.0.1 /index.php/Menu/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000301s ]
+
+[ 2016-05-17T18:42:45+08:00 ] 127.0.0.1 /index.php/Menu/menulist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000308s ]
+
+[ 2016-05-17T18:42:50+08:00 ] 127.0.0.1 /index.php/Menu/add/pid/0.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+
+[ 2016-05-17T18:42:59+08:00 ] 127.0.0.1 /index.php/Menu/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000308s ]
+
+[ 2016-05-17T18:43:00+08:00 ] 127.0.0.1 /index.php/Menu/menulist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000300s ]
+
+[ 2016-05-17T18:43:02+08:00 ] 127.0.0.1 /index.php/Menu/add/pid/0.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000325s ]
+
+[ 2016-05-17T18:43:12+08:00 ] 127.0.0.1 /index.php/Index/images/transparent.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000428s ]
+
+[ 2016-05-17T18:43:12+08:00 ] 127.0.0.1 /index.php/Menu/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000353s ]
+
+[ 2016-05-17T18:43:13+08:00 ] 127.0.0.1 /index.php/Menu/menulist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000460s ]
+
+[ 2016-05-17T18:43:15+08:00 ] 127.0.0.1 /index.php/Menu/add/pid/0.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000440s ]
+
+[ 2016-05-17T18:43:24+08:00 ] 127.0.0.1 /index.php/Menu/add/pid/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000300s ]
+
+[ 2016-05-17T18:46:03+08:00 ] 127.0.0.1 /index.php/Menu/add/pid/0.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000318s ]
+
+[ 2016-05-17T18:46:05+08:00 ] 127.0.0.1 /index.php/Menu/add/pid/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000314s ]
+
+[ 2016-05-17T18:46:20+08:00 ] 127.0.0.1 /index.php/AuthManager/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000313s ]
+
+[ 2016-05-17T18:46:23+08:00 ] 127.0.0.1 /index.php/AuthManager/editGroup.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000317s ]
+
+[ 2016-05-17T18:46:57+08:00 ] 127.0.0.1 /index.php/menulist/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000309s ]
+ERR: 无法加载控制器:Menulist
+
+[ 2016-05-17T18:47:06+08:00 ] 127.0.0.1 /index.php/menu/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000443s ]
+
+[ 2016-05-17T18:47:06+08:00 ] 127.0.0.1 /index.php/Menu/menulist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000467s ]
+
+[ 2016-05-17T18:47:08+08:00 ] 127.0.0.1 /index.php/Menu/add/pid/0.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000338s ]
+
+[ 2016-05-17T18:48:32+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000333s ]
+
+[ 2016-05-17T18:48:47+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000363s ]
+
+[ 2016-05-17T18:48:48+08:00 ] ::1 /index.php/Config/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000410s ]
+
+[ 2016-05-17T18:48:48+08:00 ] ::1 /index.php/Config/group.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000340s ]
+
+[ 2016-05-17T18:50:16+08:00 ] 127.0.0.1 /index.php/menu/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000306s ]
+
+[ 2016-05-17T18:50:17+08:00 ] 127.0.0.1 /index.php/Menu/menulist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000312s ]
+
+[ 2016-05-17T18:50:36+08:00 ] 127.0.0.1 /index.php/menu/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000338s ]
+
+[ 2016-05-17T18:50:36+08:00 ] 127.0.0.1 /index.php/Menu/menulist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000298s ]
+
+[ 2016-05-17T18:50:56+08:00 ] 127.0.0.1 /index.php/Menu/add/pid/0.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000316s ]
+
+[ 2016-05-17T18:52:43+08:00 ] 127.0.0.1 /index.php/menu/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000327s ]
+
+[ 2016-05-17T18:52:43+08:00 ] 127.0.0.1 /index.php/Menu/menulist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000316s ]
+
+[ 2016-05-17T18:54:08+08:00 ] 127.0.0.1 /index.php/menu/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+
+[ 2016-05-17T18:54:08+08:00 ] 127.0.0.1 /index.php/Menu/menulist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000341s ]
+
+[ 2016-05-17T18:54:13+08:00 ] 127.0.0.1 /index.php/Menu/add/pid/0.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
+
+[ 2016-05-17T18:58:56+08:00 ] 127.0.0.1 /index.php/menu/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000313s ]
+
+[ 2016-05-17T18:58:56+08:00 ] 127.0.0.1 /index.php/Menu/menulist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000308s ]
+
+[ 2016-05-17T18:59:00+08:00 ] 127.0.0.1 /index.php/Menu/add/pid/0.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000318s ]
+
+[ 2016-05-17T18:59:24+08:00 ] 127.0.0.1 /index.php/menu/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000305s ]
+
+[ 2016-05-17T18:59:25+08:00 ] 127.0.0.1 /index.php/Menu/menulist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000369s ]
+
+[ 2016-05-17T18:59:27+08:00 ] 127.0.0.1 /index.php/Menu/add/pid/0.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000320s ]
+
+[ 2016-05-17T18:59:28+08:00 ] 127.0.0.1 /index.php/Menu/add/pid/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000330s ]
+
+[ 2016-05-17T18:59:52+08:00 ] 127.0.0.1 /index.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000296s ]
+
+[ 2016-05-17T18:59:54+08:00 ] 127.0.0.1 /index.php/Index/images/transparent.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000297s ]
+
+[ 2016-05-17T18:59:54+08:00 ] 127.0.0.1 /index.php/Config/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000315s ]
+
+[ 2016-05-17T18:59:54+08:00 ] 127.0.0.1 /index.php/Config/group.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000346s ]
+
+[ 2016-05-17T19:01:00+08:00 ] 127.0.0.1 /index.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
+
+[ 2016-05-17T19:01:01+08:00 ] 127.0.0.1 /index.php/Index/images/transparent.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000319s ]
+
+[ 2016-05-17T19:01:01+08:00 ] 127.0.0.1 /index.php/Config/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000308s ]
+
+[ 2016-05-17T19:01:02+08:00 ] 127.0.0.1 /index.php/Config/group.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000345s ]
+
+[ 2016-05-17T19:01:06+08:00 ] 127.0.0.1 /index.php/Config/conflist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000306s ]
+
+[ 2016-05-17T19:01:08+08:00 ] 127.0.0.1 /index.php/Config/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000305s ]
+
+[ 2016-05-17T19:01:42+08:00 ] 127.0.0.1 /index.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000308s ]
+
+[ 2016-05-17T19:01:44+08:00 ] 127.0.0.1 /index.php/Index/images/transparent.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000292s ]
+
+[ 2016-05-17T19:01:44+08:00 ] 127.0.0.1 /index.php/Menu/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000304s ]
+
+[ 2016-05-17T19:01:44+08:00 ] 127.0.0.1 /index.php/Menu/menulist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000306s ]
+
+[ 2016-05-17T19:01:57+08:00 ] 127.0.0.1 /index.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000302s ]
+
+[ 2016-05-17T19:01:59+08:00 ] 127.0.0.1 /index.php/Index/images/transparent.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000309s ]
+
+[ 2016-05-17T19:01:59+08:00 ] 127.0.0.1 /index.php/Config/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000305s ]
+
+[ 2016-05-17T19:02:00+08:00 ] 127.0.0.1 /index.php/Config/group.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000384s ]
+
+[ 2016-05-17T19:02:01+08:00 ] 127.0.0.1 /index.php/Config/conflist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000331s ]
+
+[ 2016-05-17T19:02:03+08:00 ] 127.0.0.1 /index.php/Config/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000305s ]
+
+[ 2016-05-17T19:02:16+08:00 ] ::1 /index.php/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000408s ]
+
+[ 2016-05-17T19:02:16+08:00 ] ::1 /index.php/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000463s ]
+
+[ 2016-05-17T19:02:16+08:00 ] ::1 /index.php/Public/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000313s ]
+
+[ 2016-05-17T19:02:45+08:00 ] 127.0.0.1 /index.php/Index/images/transparent.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000321s ]
+
+[ 2016-05-17T19:02:45+08:00 ] 127.0.0.1 /index.php/Menu/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000314s ]
+
+[ 2016-05-17T19:02:45+08:00 ] 127.0.0.1 /index.php/Menu/menulist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000365s ]
+
+[ 2016-05-17T19:02:54+08:00 ] 127.0.0.1 /index.php/Index/images/transparent.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000301s ]
+
+[ 2016-05-17T19:02:54+08:00 ] 127.0.0.1 /index.php/Config/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
+
+[ 2016-05-17T19:02:54+08:00 ] 127.0.0.1 /index.php/Config/group.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000321s ]
+
+[ 2016-05-17T19:03:01+08:00 ] 127.0.0.1 /index.php/Index/images/transparent.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000311s ]
+
+[ 2016-05-17T19:03:01+08:00 ] 127.0.0.1 /index.php/Config/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000298s ]
+
+[ 2016-05-17T19:03:01+08:00 ] 127.0.0.1 /index.php/Config/group.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000308s ]
+
+[ 2016-05-17T19:03:06+08:00 ] 127.0.0.1 /index.php/Config/group.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000358s ]
+
+[ 2016-05-17T19:03:10+08:00 ] 127.0.0.1 /index.php/Config/conflist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000342s ]
+
+[ 2016-05-17T19:03:10+08:00 ] 127.0.0.1 /index.php/Config/group.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000294s ]
+
+[ 2016-05-17T19:03:11+08:00 ] 127.0.0.1 /index.php/Config/conflist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000406s ]
+
+[ 2016-05-17T19:03:24+08:00 ] 127.0.0.1 /index.php/Index/images/transparent.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+
+[ 2016-05-17T19:03:24+08:00 ] 127.0.0.1 /index.php/AuthManager/frame.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000337s ]
+
+[ 2016-05-17T19:03:24+08:00 ] 127.0.0.1 /index.php/AuthManager/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+
+[ 2016-05-17T19:03:26+08:00 ] 127.0.0.1 /index.php/Aduser/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000299s ]
+
+[ 2016-05-17T19:03:27+08:00 ] 127.0.0.1 /index.php/AuthManager/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000300s ]
+
+[ 2016-05-17T19:03:34+08:00 ] 127.0.0.1 /index.php/Public/logout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000369s ]
+
+[ 2016-05-17T19:03:35+08:00 ] 127.0.0.1 /index.php/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000300s ]
+
+[ 2016-05-17T19:03:36+08:00 ] 127.0.0.1 /index.php/Public/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000364s ]
+
+[ 2016-05-17T19:05:33+08:00 ] 127.0.0.1 /index.php/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
+
+[ 2016-05-17T19:05:33+08:00 ] 127.0.0.1 /index.php/Public/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000337s ]
+
+[ 2016-05-17T19:05:35+08:00 ] 127.0.0.1 /index.php/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000331s ]
+
+[ 2016-05-17T19:05:35+08:00 ] 127.0.0.1 /index.php/Public/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000302s ]
+
+[ 2016-05-17T19:05:36+08:00 ] 127.0.0.1 /index.php/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000340s ]
+
+[ 2016-05-17T19:05:36+08:00 ] 127.0.0.1 /index.php/Public/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000309s ]
+
+[ 2016-05-17T19:05:37+08:00 ] 127.0.0.1 /index.php/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000295s ]
+
+[ 2016-05-17T19:05:37+08:00 ] 127.0.0.1 /index.php/Public/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000305s ]
+
+[ 2016-05-17T19:06:11+08:00 ] 127.0.0.1 /index.php/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000327s ]
+
+[ 2016-05-17T19:06:11+08:00 ] 127.0.0.1 /index.php/Public/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000317s ]
+
+[ 2016-05-17T19:06:14+08:00 ] 127.0.0.1 /index.php/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000397s ]
+
+[ 2016-05-17T19:06:14+08:00 ] 127.0.0.1 /index.php/Public/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000298s ]
+
+[ 2016-05-17T19:06:55+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000456s ]
+
+[ 2016-05-17T19:07:00+08:00 ] ::1 /index.php/Public/logout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000333s ]
+
+[ 2016-05-17T19:07:01+08:00 ] ::1 /index.php/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000591s ]
+
+[ 2016-05-17T19:07:01+08:00 ] ::1 /index.php/Public/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000364s ]
+
+[ 2016-05-17T19:07:03+08:00 ] ::1 /index.php/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000488s ]
+
+[ 2016-05-17T19:07:03+08:00 ] ::1 /index.php/Public/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000339s ]
+
+[ 2016-05-17T19:07:19+08:00 ] ::1 /index.php/Public/verify.html?0.04018415314840518
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000360s ]
+
+[ 2016-05-17T21:49:25+08:00 ] ::1 /index.php/Public/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000348s ]
+
+[ 2016-05-17T21:49:28+08:00 ] ::1 /index.php/Public/verify.html?0.1873427493184483
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000430s ]
+
+[ 2016-05-17T21:49:29+08:00 ] ::1 /index.php/Public/verify.html?0.1873427493184483?0.9869710058071672
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000304s ]
+
+[ 2016-05-17T21:49:29+08:00 ] ::1 /index.php/Public/verify.html?0.1873427493184483?0.9869710058071672?0.935366419247902
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000328s ]
+
+[ 2016-05-17T22:02:54+08:00 ] ::1 /index.php/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000350s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000457s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000518s ]
+SQL: SHOW COLUMNS FROM `cjnet_aduser` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `cjnet_aduser` WHERE `ad_name` = 'CJadmin' AND `ad_pass` = 'a8b0b2c84c393e13fdbb96afb2a4a3a8' AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cjnet_aduser` [ RunTime:0.0011s ]
+SQL: SELECT `ad_id`,`ad_name`,`ad_pass`,`openid`,`create_time`,`login_ip`,`login_time`,`status`,`login`,`type` FROM `cjnet_aduser` WHERE `ad_id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `cjnet_aduser` SET `login`=`login`+1,`login_time`='1463493774',`login_ip`='0' WHERE `ad_id` = 1 [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cjnet_action` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cjnet_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2016-05-17T22:02:54+08:00 ] ::1 /index.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000423s ]
+
+[ 2016-05-17T22:02:55+08:00 ] ::1 /index.php/Index/images/transparent.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000312s ]
+
+[ 2016-05-17T22:02:55+08:00 ] ::1 /index.php/AuthManager/frame.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000322s ]
+
+[ 2016-05-17T22:02:56+08:00 ] ::1 /index.php/AuthManager/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000340s ]
+
+[ 2016-05-17T22:03:00+08:00 ] ::1 /index.php/Menu/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000434s ]
+
+[ 2016-05-17T22:03:00+08:00 ] ::1 /index.php/Menu/menulist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000331s ]
+
+[ 2016-05-17T22:03:11+08:00 ] ::1 /index.php/Menu/add/pid/0.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000110s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000693s ]
+
+[ 2016-05-17T22:03:12+08:00 ] ::1 /index.php/Menu/add/pid/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000395s ]
+
+[ 2016-05-17T22:08:01+08:00 ] ::1 /index.php/File/uploadimg/session_id/b5e75c8c68cd7187542f8f67ea504b32.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000573s ]
+
+[ 2016-05-17T22:08:08+08:00 ] ::1 /index.php/Menu/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000379s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000604s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000723s ]
+SQL: SHOW COLUMNS FROM `cjnet_menu` [ RunTime:0.0039s ]
+SQL: SELECT m1.title as m1title,m1.url as m1url,m2.title as m2title,m2.url as m2url FROM cjnet_menu as m1 INNER JOIN cjnet_menu as m2 ON m1.pid = m2.id  WHERE ( m1.pid !=0 AND m1.url like '%Menu/add%' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cjnet_menu` [ RunTime:0.0027s ]
+NOTIC: [8] Undefined index: validate /Applications/XAMPP/xamppfiles/htdocs/zendwork/myoa/core/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /Applications/XAMPP/xamppfiles/htdocs/zendwork/myoa/core/Library/Think/Model.class.php 第 1128 行.
+SQL: INSERT INTO `cjnet_menu` (`title`,`sort`,`url`,`width`,`height`,`pid`,`group`,`menu_img`,`hide`,`is_dev`,`tip`,`id`,`status`) VALUES ('服务器信息','0','Server/index','1200','600','0','','/Uploads/Images/orign/2016-05-17/573b25c11bf1d.png','0','0','','0','1') [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cjnet_action` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `cjnet_action` WHERE `name` = 'update_menu' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-05-17T22:08:10+08:00 ] ::1 /index.php/Menu/menulist/pid/0.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000650s ]
+
+[ 2016-05-17T22:08:12+08:00 ] ::1 /index.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000601s ]
+
+[ 2016-05-17T22:08:18+08:00 ] ::1 /index.php/Index/images/transparent.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000320s ]
+
+[ 2016-05-17T22:08:18+08:00 ] ::1 /index.php/Menu/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000336s ]
+
+[ 2016-05-17T22:08:18+08:00 ] ::1 /index.php/Menu/menulist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000341s ]
+
+[ 2016-05-17T22:08:21+08:00 ] ::1 /index.php/Menu/edit/id/13.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000318s ]
+
+[ 2016-05-17T22:08:22+08:00 ] ::1 /index.php/Menu/edit/id/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000599s ]
+
+[ 2016-05-17T22:08:27+08:00 ] ::1 /index.php/Menu/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000523s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000439s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000498s ]
+SQL: SHOW COLUMNS FROM `cjnet_menu` [ RunTime:0.0042s ]
+SQL: SELECT m1.title as m1title,m1.url as m1url,m2.title as m2title,m2.url as m2url FROM cjnet_menu as m1 INNER JOIN cjnet_menu as m2 ON m1.pid = m2.id  WHERE ( m1.pid !=0 AND m1.url like '%Menu/edit%' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cjnet_menu` [ RunTime:0.0011s ]
+NOTIC: [8] Undefined index: validate /Applications/XAMPP/xamppfiles/htdocs/zendwork/myoa/core/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /Applications/XAMPP/xamppfiles/htdocs/zendwork/myoa/core/Library/Think/Model.class.php 第 1128 行.
+SQL: UPDATE `cjnet_menu` SET `title`='服务器信息',`sort`='11',`url`='Server/index',`width`='1200',`height`='600',`pid`='0',`group`='',`menu_img`='/Uploads/Images/orign/2016-05-17/573b25c11bf1d.png',`hide`='0',`is_dev`='0',`tip`='' WHERE `id` = 13 [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cjnet_action` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `cjnet_action` WHERE `name` = 'update_menu' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-05-17T22:08:29+08:00 ] ::1 /index.php/Menu/menulist/pid/0.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000391s ]
+
+[ 2016-05-17T22:08:32+08:00 ] ::1 /index.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000432s ]
+
+[ 2016-05-17T22:08:34+08:00 ] ::1 /index.php/Index/images/transparent.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000570s ]
+
+[ 2016-05-17T22:08:34+08:00 ] ::1 /index.php/Server/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000498s ]
+ERR: 模板不存在:./coa/Bdadmin/View/Server/index.html
+
+[ 2016-05-17T22:08:37+08:00 ] ::1 /index.php/AuthManager/frame.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000466s ]
+
+[ 2016-05-17T22:08:37+08:00 ] ::1 /index.php/AuthManager/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000367s ]
+
+[ 2016-05-17T22:17:32+08:00 ] ::1 /index.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000446s ]
+
+[ 2016-05-17T22:17:34+08:00 ] ::1 /index.php/Index/images/transparent.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000454s ]
+
+[ 2016-05-17T22:17:34+08:00 ] ::1 /index.php/Server/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000388s ]
+
+[ 2016-05-17T22:17:34+08:00 ] ::1 /index.php/Menu/menulist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000329s ]
+
+[ 2016-05-17T22:18:29+08:00 ] ::1 /index.php/Server/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000551s ]
+
+[ 2016-05-17T22:18:29+08:00 ] ::1 /index.php/Menu/menulist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000322s ]
+
+[ 2016-05-17T22:19:02+08:00 ] ::1 /index.php/Server/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000328s ]
+
+[ 2016-05-17T22:19:02+08:00 ] ::1 /index.php/Menu/menulist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000311s ]
+
+[ 2016-05-17T22:19:15+08:00 ] ::1 /index.php/Server/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000386s ]
+
+[ 2016-05-17T22:19:15+08:00 ] ::1 /index.php/Menu/menulist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000401s ]
+
+[ 2016-05-17T22:22:20+08:00 ] ::1 /index.php/Server/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000489s ]
+
+[ 2016-05-17T22:23:37+08:00 ] ::1 /index.php/Server/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000443s ]
+
+[ 2016-05-17T22:23:52+08:00 ] ::1 /index.php/Server/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000431s ]
+
+[ 2016-05-17T22:23:52+08:00 ] ::1 /index.php/Menu/menulist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000342s ]
+
+[ 2016-05-17T22:24:52+08:00 ] ::1 /index.php/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000705s ]
+
+[ 2016-05-17T22:24:53+08:00 ] ::1 /index.php/images/transparent.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000316s ]
+
+[ 2016-05-17T22:24:53+08:00 ] ::1 /index.php/Config/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000737s ]
+
+[ 2016-05-17T22:24:53+08:00 ] ::1 /index.php/Config/group.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000312s ]
+
+[ 2016-05-17T22:24:56+08:00 ] ::1 /index.php/Menu/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000449s ]
+
+[ 2016-05-17T22:24:56+08:00 ] ::1 /index.php/Menu/menulist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000304s ]
+
+[ 2016-05-17T22:25:05+08:00 ] ::1 /index.php/Menu/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000319s ]
+
+[ 2016-05-17T22:25:05+08:00 ] ::1 /index.php/Menu/menulist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000321s ]
+
+[ 2016-05-17T22:25:43+08:00 ] ::1 /index.php/Menu/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000341s ]
+
+[ 2016-05-17T22:25:52+08:00 ] ::1 /index.php/Menu/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000338s ]
+
+[ 2016-05-17T22:28:54+08:00 ] ::1 /index.php/Menu/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000330s ]
+
+[ 2016-05-17T22:29:37+08:00 ] ::1 /index.php/Menu/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000447s ]
+
+[ 2016-05-17T22:31:50+08:00 ] ::1 /index.php/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000447s ]
+
+[ 2016-05-17T22:31:51+08:00 ] ::1 /index.php/images/transparent.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000319s ]
+
+[ 2016-05-17T22:31:51+08:00 ] ::1 /index.php/Menu/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000514s ]
+
+[ 2016-05-17T22:31:51+08:00 ] ::1 /index.php/Menu/menulist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000339s ]
+
+[ 2016-05-17T22:31:53+08:00 ] ::1 /index.php/Menu/menulist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000457s ]
+
+[ 2016-05-17T22:31:54+08:00 ] ::1 /index.php/Menu/add/pid/0.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000327s ]
+
+[ 2016-05-17T22:31:56+08:00 ] ::1 /index.php/Menu/add/pid/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000459s ]
+
+[ 2016-05-17T22:33:30+08:00 ] ::1 /index.php/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000484s ]
+
+[ 2016-05-17T22:33:32+08:00 ] ::1 /index.php/images/transparent.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000465s ]
+
+[ 2016-05-17T22:33:32+08:00 ] ::1 /index.php/Menu/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000491s ]
+
+[ 2016-05-17T22:33:34+08:00 ] ::1 /index.php/Menu/menulist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000655s ]
+
+[ 2016-05-17T22:33:38+08:00 ] ::1 /index.php/Menu/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000326s ]
+
+[ 2016-05-17T22:34:13+08:00 ] ::1 /index.php/Server/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000624s ]
+
+[ 2016-05-17T22:34:17+08:00 ] ::1 /index.php/Menu/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000503s ]
+
+[ 2016-05-17T22:35:08+08:00 ] ::1 /index.php/Menu/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000322s ]
+
+[ 2016-05-17T22:35:08+08:00 ] ::1 /index.php/Menu/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000352s ]
+
+[ 2016-05-17T22:36:08+08:00 ] ::1 /index.php/Menu/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000399s ]
+
+[ 2016-05-17T22:36:46+08:00 ] ::1 /index.php/Menu/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000322s ]
+
+[ 2016-05-17T22:36:49+08:00 ] ::1 /index.php/Menu/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000322s ]
+
+[ 2016-05-17T22:36:49+08:00 ] ::1 /index.php/Menu/menulist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000329s ]
+
+[ 2016-05-17T22:36:51+08:00 ] ::1 /index.php/Menu/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000368s ]
+
+[ 2016-05-17T22:36:52+08:00 ] ::1 /index.php/Menu/menulist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000299s ]
+
+[ 2016-05-17T22:37:19+08:00 ] ::1 /index.php/Menu/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000340s ]
+
+[ 2016-05-17T22:37:19+08:00 ] ::1 /index.php/Menu/menulist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000350s ]
+
+[ 2016-05-17T22:37:23+08:00 ] ::1 /index.php/Menu/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000368s ]
+
+[ 2016-05-17T22:37:23+08:00 ] ::1 /index.php/Menu/menulist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000310s ]
+
+[ 2016-05-17T22:37:25+08:00 ] ::1 /index.php/Menu/menulist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000568s ]
+
+[ 2016-05-17T22:39:41+08:00 ] ::1 /index.php/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000353s ]
+
+[ 2016-05-17T22:39:43+08:00 ] ::1 /index.php/images/transparent.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000487s ]
+
+[ 2016-05-17T22:39:43+08:00 ] ::1 /index.php/AuthManager/frame.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000445s ]
+
+[ 2016-05-17T22:39:43+08:00 ] ::1 /index.php/AuthManager/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000440s ]
+
+[ 2016-05-17T22:39:53+08:00 ] ::1 /index.php/Config/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000601s ]
+
+[ 2016-05-17T22:39:54+08:00 ] ::1 /index.php/Config/conflist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000387s ]
+
+[ 2016-05-17T22:39:56+08:00 ] ::1 /index.php/Config/group.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000657s ]
+
+[ 2016-05-17T22:39:58+08:00 ] ::1 /index.php/Config/conflist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+
+[ 2016-05-17T22:39:58+08:00 ] ::1 /index.php/Config/group.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000310s ]
+
+[ 2016-05-17T22:40:02+08:00 ] ::1 /index.php/Menu/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000424s ]
+
+[ 2016-05-17T22:40:02+08:00 ] ::1 /index.php/Menu/menulist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000301s ]
+
+[ 2016-05-17T22:40:03+08:00 ] ::1 /index.php/Menu/menulist/pid/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+
+[ 2016-05-17T22:40:10+08:00 ] ::1 /index.php/Menu/edit/id/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000367s ]
+
+[ 2016-05-17T22:40:11+08:00 ] ::1 /index.php/Menu/edit/id/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000437s ]
+
+[ 2016-05-17T22:40:15+08:00 ] ::1 /index.php/Menu/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000558s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000851s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000961s ]
+SQL: SHOW COLUMNS FROM `cjnet_menu` [ RunTime:0.0035s ]
+SQL: SELECT m1.title as m1title,m1.url as m1url,m2.title as m2title,m2.url as m2url FROM cjnet_menu as m1 INNER JOIN cjnet_menu as m2 ON m1.pid = m2.id  WHERE ( m1.pid !=0 AND m1.url like '%Menu/edit%' ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `cjnet_menu` [ RunTime:0.0016s ]
+NOTIC: [8] Undefined index: validate /Applications/XAMPP/xamppfiles/htdocs/zendwork/myoa/core/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /Applications/XAMPP/xamppfiles/htdocs/zendwork/myoa/core/Library/Think/Model.class.php 第 1128 行.
+SQL: UPDATE `cjnet_menu` SET `title`='配置列表',`sort`='2',`url`='Config/conflist',`width`='1200',`height`='600',`pid`='4',`group`='系统设置',`menu_img`='',`hide`='0',`is_dev`='0',`tip`='' WHERE `id` = 5 [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cjnet_action` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `cjnet_action` WHERE `name` = 'update_menu' LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2016-05-17T22:40:17+08:00 ] ::1 /index.php/Menu/menulist/pid/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000359s ]
+
+[ 2016-05-17T22:40:18+08:00 ] ::1 /index.php/Menu/edit/id/7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000461s ]
+
+[ 2016-05-17T22:40:19+08:00 ] ::1 /index.php/Menu/edit/id/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000763s ]
+
+[ 2016-05-17T22:40:25+08:00 ] ::1 /index.php/Menu/edit/id/6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000360s ]
+
+[ 2016-05-17T22:40:25+08:00 ] ::1 /index.php/Menu/edit/id/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
+
+[ 2016-05-17T22:40:29+08:00 ] ::1 /index.php/Menu/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000387s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000551s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000605s ]
+SQL: SHOW COLUMNS FROM `cjnet_menu` [ RunTime:0.0039s ]
+SQL: SELECT m1.title as m1title,m1.url as m1url,m2.title as m2title,m2.url as m2url FROM cjnet_menu as m1 INNER JOIN cjnet_menu as m2 ON m1.pid = m2.id  WHERE ( m1.pid !=0 AND m1.url like '%Menu/edit%' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cjnet_menu` [ RunTime:0.0011s ]
+NOTIC: [8] Undefined index: validate /Applications/XAMPP/xamppfiles/htdocs/zendwork/myoa/core/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /Applications/XAMPP/xamppfiles/htdocs/zendwork/myoa/core/Library/Think/Model.class.php 第 1128 行.
+SQL: UPDATE `cjnet_menu` SET `title`='系统设置',`sort`='10',`url`='Config/index',`width`='1200',`height`='600',`pid`='4',`group`='系统设置',`menu_img`='',`hide`='1',`is_dev`='0',`tip`='' WHERE `id` = 6 [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `cjnet_action` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `cjnet_action` WHERE `name` = 'update_menu' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-05-17T22:40:31+08:00 ] ::1 /index.php/Menu/menulist/pid/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000533s ]
+
+[ 2016-05-17T22:40:33+08:00 ] ::1 /index.php/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000358s ]
+
+[ 2016-05-17T22:40:34+08:00 ] ::1 /index.php/images/transparent.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000082s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000771s ]
+
+[ 2016-05-17T22:40:34+08:00 ] ::1 /index.php/Config/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000871s ]
+
+[ 2016-05-17T22:40:34+08:00 ] ::1 /index.php/Config/group.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000336s ]
+
