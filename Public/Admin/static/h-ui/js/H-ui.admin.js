@@ -99,7 +99,8 @@ function creatIframe(href,titleName){
 	if (!$tabNav[0]){return}
 	
 	$tabNavitem.each(function(index, element) {
-        taballwidth+=Number(parseFloat($(this).width()+60))
+        taballwidth+=Number(parseFloat($(this).width()+60));
+    	
     });
 	$tabNav.width(taballwidth+25);
 	var w = $tabNavWp.width();
@@ -109,6 +110,7 @@ function creatIframe(href,titleName){
 		$tabNavmore.hide();
 		$tabNav.css({left:0})
 	}
+	
 	var iframeBox=iframe_box.find('.show_iframe');
 	iframeBox.hide();
 	iframe_box.append('<div class="show_iframe"><div class="loading"></div><iframe frameborder="0" src='+href+'></iframe></div>');

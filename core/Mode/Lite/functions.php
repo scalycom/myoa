@@ -827,6 +827,9 @@ function layout($layout) {
  * @return string
  */
 function U($url='',$vars='',$suffix=true,$domain=false) {
+    if(is_http($url)){
+        return $url;    
+    }
     // 解析URL
     $info   =  parse_url($url);
     $url    =  !empty($info['path'])?$info['path']:ACTION_NAME;

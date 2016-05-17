@@ -22,6 +22,7 @@ class MenuController extends CommonController {
      */
     public function index(){
       $this->display();
+      U();
     }
     
     public function menulist(){

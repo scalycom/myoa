@@ -880,6 +880,9 @@ function layout($layout) {
  */
 function U($url='',$vars='',$suffix=true,$domain=false,$app_url='') {
     // 解析URL
+    if(is_http($url)){
+        return $url;
+    }
     $info   =  parse_url($url);
     $url    =  !empty($info['path'])?$info['path']:ACTION_NAME;
     if(isset($info['fragment'])) { // 解析锚点
