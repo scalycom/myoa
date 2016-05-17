@@ -1,0 +1,3 @@
+<?php
+//000000000000a:10:{s:17:"CONFIG_GROUP_LIST";a:4:{i:1;s:6:"基本";i:2;s:6:"内容";i:3;s:6:"用户";i:4;s:6:"系统";}s:16:"CONFIG_TYPE_LIST";a:5:{i:0;s:6:"数字";i:1;s:6:"字符";i:2;s:6:"文本";i:3;s:6:"数组";i:4;s:6:"枚举";}s:14:"ADMIN_ALLOW_IP";s:0:"";s:26:"DATA_BACKUP_COMPRESS_LEVEL";s:1:"9";s:12:"DEVELOP_MODE";s:1:"1";s:16:"DATA_BACKUP_PATH";s:11:"./App/Data/";s:21:"DATA_BACKUP_PART_SIZE";s:8:"20971520";s:9:"LIST_ROWS";s:2:"10";s:12:"SYS_WEB_NAME";s:16:"SCBS工作平台";s:11:"SYS_VERSION";s:4:"V1.0";}
+?>

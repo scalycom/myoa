@@ -1,0 +1,102 @@
+<!--_meta 作为公共模版分离出去111-->
+
+<include file="Public:base" />
+
+<!--/meta 作为公共模版分离出去-->
+
+<title>用户授权</title>
+</head>
+<body>
+	<article class="page-container">
+		<form class="form form-horizontal skin-minimal input" id="fromcreate"
+			method="post">
+
+
+			<div class="row cl">
+				<label class="form-label col-xs-4 col-sm-2">用户组</label>
+
+				<div class="formControls col-xs-8 col-sm-9">
+
+					<label class="item-label">{$ad_name} 所属的用户组列表</label>
+
+					<volist name="auth_groups" id="vo">
+				</div>
+
+				<div class="formControls col-xs-8 col-sm-9">
+
+
+
+					<volist name="auth_groups" id="vo"> <label
+						class="checkbox"> <input class="auth_groups"
+						type="checkbox" name="group_id[]" value="{$vo.id}">{$vo.title}
+					</label> </volist>
+					<input type="hidden" name="ad_id" value="{:I('ad_id')}"> <input
+						type="hidden" name="batch" value="true">
+
+				</div>
+			</div>
+
+
+			<div class="row cl">
+				<div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-2">
+
+					<button class="btn btn-primary radius" type="button"
+						onclick="submit_form();">
+						<i class="Hui-iconfont">&#xe632;</i> 提交
+					</button>
+
+				</div>
+			</div>
+		</form>
+	</article>
+
+	<!-- 底部js引入S-->
+	<include file="Public:script" />
+	<!-- 底部js引入E-->
+
+
+
+	<!--请在下方写此页面业务相关的脚本-->
+
+	<script type="text/javascript">
+	  $(function(){
+	        var group = [{$user_groups}];
+	        $('.auth_groups').each(function(){
+	            if( $.inArray( parseInt(this.value,10),group )>-1 ){
+	                $(this).prop('checked',true);
+	            }
+	        });
+	    });
+    	var index = parent.layer.getFrameIndex(window.name);
+
+    	function submit_form(url = "{:U('AuthManager/addToGroup')}") {
+    		$.ajax({
+    			cache : true,
+    			type : "POST",
+    			url : url,
+    			data : $('#fromcreate').serialize(),// 你的formid
+    			async : false,
+    			error : function(request) {
+    				msg_error('网络错误,请稍后重试!');
+    			
+    			},
+    			success : function(data) {
+    				if (data.status == 1) {
+    					
+    					parent.msg_success(data.info);
+    					
+    					parent.ajaxload("{:U('Aduser/index')}");
+    					
+    					parent.layer.close(index);
+    				} else {
+    					msg_error(data.info);
+    				}
+    			}
+    		});
+
+    	}
+    </script>
+
+	<!--/请在上方写此页面业务相关的脚本-->
+</body>
+</html>

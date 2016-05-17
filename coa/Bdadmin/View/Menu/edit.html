@@ -1,0 +1,276 @@
+<!--_meta 作为公共模版分离出去-->
+
+<include file="Public:base" />
+
+<!--/meta 作为公共模版分离出去-->
+
+<title>{:isset($info['id'])?'编辑':'新增'}后台菜单</title>
+</head>
+<body>
+	<article class="page-container">
+		<form class="form form-horizontal skin-minimal input" id="fromcreate"
+			method="post">
+			<div class="row cl">
+				<label class="form-label col-xs-4 col-sm-2">标题</label>
+
+				<div class="formControls col-xs-8 col-sm-9">
+					<input type="text" class="input-text" name="title"
+						value="{$info.title|default=''}">
+				</div>
+			</div>
+
+			<div class="row cl">
+				<label class="form-label col-xs-4 col-sm-2">排序</label>
+
+				<div class="formControls col-xs-8 col-sm-9">
+
+					<input type="text" class="input-text" name="sort"
+						value="{$info.sort|default=0}">
+
+				</div>
+			</div>
+
+
+
+
+			<div class="row cl">
+				<label class="form-label col-xs-4 col-sm-2">链接</label>
+
+				<div class="formControls col-xs-8 col-sm-9">
+
+					<input type="text" class="input-text" name="url"
+						value="{$info.url|default=''}">
+
+				</div>
+			</div>
+
+
+
+
+			<div class="row cl">
+
+				<label class="form-label col-xs-4 col-sm-2">界面宽度</label>
+
+				<div class="formControls col-xs-8 col-sm-9">
+					<input type="text" class="input-text" name="width"
+						value="{$info.width|default='1200'}">
+
+				</div>
+			</div>
+			
+				<div class="row cl">
+
+				<label class="form-label col-xs-4 col-sm-2">界面高度</label>
+
+				<div class="formControls col-xs-8 col-sm-9">
+					<input type="text" class="input-text" name="height"
+						value="{$info.height|default='600'}">
+
+				</div>
+			</div>
+
+		
+		<div class="row cl">
+
+				<label class="form-label col-xs-4 col-sm-2">上级菜单</label>
+
+				<div class="formControls col-xs-8 col-sm-9">
+					<span class="select-box"> <select name="pid" class="select">
+							<volist name="Menus" id="menu">
+							<option value="{$menu.id}">{$menu.title_show}</option>
+							</volist>
+					</select>
+
+					</span>
+
+				</div>
+			</div>
+
+
+
+			<div class="row cl">
+				<label class="form-label col-xs-4 col-sm-2">分组</label>
+
+				<div class="formControls col-xs-8 col-sm-9">
+
+					<input type="text" class="input-text" name="group"
+						value="{$info.group|default=''}">
+
+				</div>
+			</div>
+
+
+			<div class="row cl">
+				<label class="form-label col-xs-4 col-sm-2">缩略图：</label>
+				<div class="formControls col-xs-8 col-sm-9">
+					<div class="uploader-thum-container">
+
+						<input type="hidden" name="menu_img" value="{$info.menu_img}"
+							id="menu_img" />
+						<div id="filePicker" class="button">选择图片</div>
+						<div id="cover_id">
+							<notempty name="info.menu_img">
+
+							<div class="upload-pre-item">
+								<img width="200px" height="200px" src="{$info.menu_img}" />
+							</div>
+
+							</notempty>
+
+						</div>
+						<button id="upload_start" type="button"
+							class="btn btn-default btn-uploadstar radius ml-10">开始上传</button>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="row cl">
+
+				<label class="form-label col-xs-4 col-sm-2">是否隐藏</label>
+
+				<div class="formControls col-xs-8 col-sm-9">
+
+					<div class="switch size-S">
+						<label class="radio"><input type="radio" name="hide"
+							value="1" />是</label> <label class="radio"><input type="radio"
+							name="hide" value="0" />否</label>
+					</div>
+
+				</div>
+			</div>
+			<div class="row cl">
+
+				<label class="form-label col-xs-4 col-sm-2">仅开发者模式可见<span
+					class="check-tips"></span></label>
+
+				<div class="formControls col-xs-8 col-sm-9">
+
+					<label class="radio"><input type="radio" name="is_dev"
+						value="1">是</label> <label class="radio"><input
+						type="radio" name="is_dev" value="0">否</label>
+
+				</div>
+
+			</div>
+
+
+
+			<div class="row cl">
+				<label class="form-label col-xs-4 col-sm-2">说明：</label>
+
+				<div class="formControls col-xs-8 col-sm-9 skin-minimal">
+					<div class="formControls col-xs-8 col-sm-9">
+						<input type="text" class="input-text" name="tip"
+							value="{$info.tip|default=''}">
+					</div>
+				</div>
+			</div>
+
+
+
+
+			<div class="row cl">
+				<div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-2">
+					<input type="hidden" name="id" value="{$info.id|default=''}">
+
+					<button class="btn btn-primary radius" type="button"
+						onclick="submit_form();">
+						<i class="Hui-iconfont">&#xe632;</i> 提交
+					</button>
+
+				</div>
+			</div>
+		</form>
+	</article>
+
+	<!-- 底部js引入S-->
+	<include file="Public:script" />
+	<!-- 底部js引入E-->
+<script type="text/javascript" src="__STATIC__/uploadify/jquery.uploadify.min.js"></script>
+
+
+	<!--请在下方写此页面业务相关的脚本-->
+
+	<script type="text/javascript">
+        Think.setValue("pid", {$info.pid|default = 0});
+        Think.setValue("hide", {$info.hide|default = 0});
+        Think.setValue("is_dev", {$info.is_dev|default = 0});
+    	var index = parent.layer.getFrameIndex(window.name);
+
+    	function submit_form(url = "{:U('')}") {
+    		$.ajax({
+    			cache : true,
+    			type : "POST",
+    			url : url,
+    			data : $('#fromcreate').serialize(),// 你的formid
+    			async : false,
+    			error : function(request) {
+    				msg_error('网络错误,请稍后重试!');
+    			
+    			},
+    			success : function(data) {
+    				if (data.status == 1) {
+    					
+    					parent.msg_success(data.info);
+    					
+    					parent.ajaxload("{:U('menulist?pid='.$info['pid'])}");
+    					
+    					parent.layer.close(index);
+    				} else {
+    					msg_error(data.info);
+    				}
+    			}
+    		});
+
+    	}
+    	
+
+    	//上传图片
+    	/* 初始化上传插件 */
+    	$("#filePicker").uploadify({
+    	    "height"          : 30,
+    	    "swf"             : "__STATIC__/uploadify/uploadify.swf",
+    	    "fileObjName"     : "download",
+    	    "buttonText"      : "选择图片",
+    	    "uploader"        : "{:U('File/uploadimg/',array('session_id'=>session_id()))}",
+    	    "width"           : 120,
+    	    'removeTimeout'	  : 1,
+    	    'fileTypeExts'	  : '*.jpg; *.png; *.gif;',
+    	    "onUploadSuccess" : uploadPicture,
+    	    'auto':false,
+    	    'onFallback' : function() {
+    	        alert('未检测到兼容版本的Flash.');
+    	    }
+    	});
+
+    	$('#upload_start').click(function(){
+    		$("#filePicker").uploadify('upload');
+    	});
+
+
+    	function uploadPicture(file, data){
+    		var data = $.parseJSON(data);
+    		var src = '';
+    	    if(data.status){
+    	    	$("#cover_id").val(data.path);
+    	    	src = data.url || '__ROOT__' + data.path
+    	    	$('#menu_img').val(src);
+    	    /* 	alert($('#menu_img').val()); */
+    	    	$("#cover_id").html(
+    	    		'<div class="upload-pre-item"><img width="200px" height="200px" src="' + src + '"/></div>'
+    	    	);
+    	    } else {
+    	    	msg_error(data.info);
+    	    	setTimeout(function(){
+    	    		$('#upload_start').attr('disabled','disabled');
+    	        },1500);
+    	    }
+    	}
+
+
+    </script>
+
+	<!--/请在上方写此页面业务相关的脚本-->
+</body>
+</html>

@@ -1,0 +1,41 @@
+<aside class="Hui-aside">
+	<input runat="server" id="divScrollValue" type="hidden" value="" />
+	<div class="menu_dropdown bk_2">
+
+		<volist name="__MENU__.child" id="sub_menu">
+
+		<dl>
+			<notempty name="sub_menu"> 
+			
+			
+			
+			<dt>
+				<i class="Hui-iconfont">&#xe616;</i> {$key}<i
+					class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i>
+			</dt>
+			</notempty>
+
+			<dd style="display: block;">
+
+
+				<ul>
+
+					<volist name="sub_menu" id="menu">
+
+					<li><a _href="{$menu.url|U}" data-title="{$menu.title}" title="{$menu.title}"
+						href="javascript:void(0)">{$menu.title}</a></li>
+							</volist>
+				</ul>
+
+			</dd>
+		</dl>
+
+		</volist>
+
+
+	</div>
+</aside>
+<div class="dislpayArrow hidden-xs">
+	<a class="pngfix" href="javascript:void(0);"
+		onClick="displaynavbar(this)"></a>
+</div>

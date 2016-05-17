@@ -1,0 +1,26 @@
+﻿
+<include file="Public:base" />
+<meta charset="utf-8">
+<body>
+
+<include file="Public:menu" />
+<input type="hidden" id="is_parent" value="1" />
+<section class="Hui-article-box">
+	<div id="Hui-tabNav" class="Hui-tabNav hidden-xs" style="display:none">
+		<div class="Hui-tabNav-wp">
+			<ul id="min_title_list" class="acrossTab cl">
+				<li class="active"><span title="菜单设置" data-href="{:U('Menu/menulist')}" >菜单设置</span><em></em></li>
+			</ul>
+		</div>
+	</div>
+	<div id="iframe_box" class="Hui-article">
+		<div class="show_iframe">
+			<div style="display:none" class="loading"></div>
+			<iframe scrolling="yes" frameborder="0" src="{:U('Menu/menulist')}"></iframe>
+		</div>
+	</div>
+</section>
+
+<include file="Public:script" />
+</body>
+</html>

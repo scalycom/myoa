@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <title>欢迎使用</title>
+	
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="__ASSETS__/css/reset.css">
+        <link rel="stylesheet" href="__ASSETS__/css/supersized.css">
+        <link rel="stylesheet" href="__ASSETS__/css/style.css">
+
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+    </head>
+
+    <body>
+
+        <div class="page-container">
+            <h1>登录</h1>
+            <form id="login_form" method="post">
+                <input type="text" name="username" class="username" placeholder="用户名">
+                <input type="password" name="password" class="password" placeholder="密码">
+                <input type="text" id="verify_input" name="verify" class="username" placeholder="验证码" style="width:150px;float:left" >
+                <img id="verify_img" src="{:U('Public/verify')}"  width="120px" height="45px" style="padding-top:22px;float:left;display:none" />
+                <button type="button" onclick="submit_form();">提交</button>
+                <div class="error"><span>+</span></div>
+            </form>
+            <div class="connect" >
+                <p>欢迎使用SCBS工作平台</p>
+                <!-- <p>
+                    <a class="facebook" href=""></a>
+                    <a class="twitter" href=""></a>
+                </p> -->
+            </div>
+        </div>
+		
+        <!-- Javascript -->
+        <script src="__ASSETS__/js/jquery-1.8.2.min.js"></script>
+        <script src="__ASSETS__/js/supersized.3.2.7.min.js"></script>
+        <script src="__ASSETS__/js/supersized-init.js"></script>
+        <script src="__ASSETS__/js/scripts.js"></script>
+ 		<script type="text/javascript" src="__LIB__/layer/2.1/layer.js"></script> 
+    </body>
+
+</html>
+<script>
+	$('#verify_img').click(function(){
+		change_vreify();
+	});
+	
+	$('#verify_input').click(function(){
+		$('#verify_img').show();
+	})
+	
+	
+	
+	function submit_form() {
+		$.ajax({
+			cache : true,
+			type : "POST",
+			url : "{:U('')}",
+			data : $('#login_form').serialize(),// 你的formid
+			async : false,
+			error : function(request) {
+				layer.msg("网络错误,请稍后重试！");
+			},
+			success : function(data) {
+				if (data.status == 1) {
+					layer.msg(data.info);
+					window.location.href=data.url;
+				} else {
+					layer.msg(data.info);
+					change_vreify();
+				}
+			}
+		});
+
+	}
+	
+	function change_vreify(){
+		var verify  = $('#verify_img');
+		var src = verify.attr("src")+"?"+Math.random();
+		verify.attr("src",src);
+	}
+
+</script>
+

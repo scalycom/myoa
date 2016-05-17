@@ -1,0 +1,105 @@
+[ 2016-05-17T08:12:38+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000151s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000712s ]
+
+[ 2016-05-17T08:12:38+08:00 ] ::1 /index.php/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000406s ]
+
+[ 2016-05-17T08:12:38+08:00 ] ::1 /index.php/Public/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000391s ]
+
+[ 2016-05-17T08:15:11+08:00 ] ::1 /index.php/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000483s ]
+
+[ 2016-05-17T08:15:11+08:00 ] ::1 /index.php/Public/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000601s ]
+
+[ 2016-05-17T08:15:20+08:00 ] ::1 /index.php/Public/verify.html?0.26481665472597604
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000353s ]
+
+[ 2016-05-17T08:15:26+08:00 ] ::1 /index.php/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000392s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000432s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000489s ]
+SQL: SHOW COLUMNS FROM `cjnet_aduser` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `cjnet_aduser` WHERE `ad_name` = 'CJadmin' AND `ad_pass` = 'a8b0b2c84c393e13fdbb96afb2a4a3a8' AND `status` = 1 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `cjnet_aduser` [ RunTime:0.0010s ]
+SQL: SELECT `ad_id`,`ad_name`,`ad_pass`,`openid`,`create_time`,`login_ip`,`login_time`,`status`,`login`,`type` FROM `cjnet_aduser` WHERE `ad_id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `cjnet_aduser` SET `login`=`login`+1,`login_time`='1463444126',`login_ip`='0' WHERE `ad_id` = 1 [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `cjnet_action` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `cjnet_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2016-05-17T08:15:26+08:00 ] ::1 /index.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000338s ]
+
+[ 2016-05-17T08:15:28+08:00 ] ::1 /index.php/Index/images/transparent.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000307s ]
+
+[ 2016-05-17T08:15:28+08:00 ] ::1 /index.php/AuthManager/frame.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000415s ]
+
+[ 2016-05-17T08:15:28+08:00 ] ::1 /index.php/AuthManager/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000320s ]
+
+[ 2016-05-17T08:15:31+08:00 ] ::1 /index.php/Config/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000329s ]
+
+[ 2016-05-17T08:15:31+08:00 ] ::1 /index.php/Config/group.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000317s ]
+
+[ 2016-05-17T08:25:01+08:00 ] ::1 /index.php/AuthManager/frame.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000461s ]
+
+[ 2016-05-17T08:25:01+08:00 ] ::1 /index.php/AuthManager/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000482s ]
+
+[ 2016-05-17T08:25:04+08:00 ] ::1 /index.php/AuthManager/editGroup.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000578s ]
+
+[ 2016-05-17T08:25:07+08:00 ] ::1 /index.php/Aduser/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000455s ]
+
+[ 2016-05-17T08:25:08+08:00 ] ::1 /index.php/AuthManager/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
+
+[ 2016-05-17T08:25:14+08:00 ] ::1 /index.php/AuthManager/editGroup.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000406s ]
+
