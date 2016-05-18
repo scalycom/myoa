@@ -180,7 +180,7 @@ Core.init = function(){
     });
     //绑定窗口点击事件
     $('.window-container').live('click',function(){
-        Core.container($(this));
+    	 Core.container($(this));
     });
     //系统设置处理
     $('.task-panel li').bind('click',function(){
@@ -193,9 +193,9 @@ Core.init = function(){
 
 //创建窗体
 Core.create = function(obj,opt){    
-    //ZENG.msgbox.show(typeof(obj), 1, 2000);
+	//ZENG.msgbox.show(typeof(obj), 1, 2000);
     if(typeof(obj)==='string'){
-        var options = {
+    	var options = {
             num		:Date.parse(new Date()),
             imgsrc	:"images/shortcut/news.png",
             title	:opt.title,
@@ -205,7 +205,14 @@ Core.create = function(obj,opt){
             resize	:opt.resize
         };
     }else{
-        var sc = obj.attr('shortcut');
+    	
+    	var sc = obj.attr('shortcut');
+        
+        if('http://w.qq.com/'==shortcut[sc][3]){
+        	var is_qq = $.cookie('is_qq');
+        	console.log($.cookie());
+        }
+        
         var options = {
             num		:shortcut[sc][0],
             title	:shortcut[sc][1],

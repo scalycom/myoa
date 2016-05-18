@@ -10,6 +10,7 @@
 
 <script type="text/javascript" src="/Public/Admin/desktop/js/jquery-1.6.2.min.js"></script>
 <script type="text/javascript" src="/Public/Admin/desktop/js/jquery.tool.js"></script>
+<script type="text/javascript" src="/Public/Admin/desktop/js/jquery.cookie.js"></script>
 <script type="text/javascript" src="/Public/Admin/desktop/js/shortcut.js"></script>
 <script type="text/javascript" src="/Public/Admin/desktop/js/templates.js"></script>
 <script type="text/javascript" src="/Public/Admin/desktop/js/jquery-smartMenu.js"></script>

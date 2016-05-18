@@ -7,7 +7,8 @@ class IndexController extends CommonController
 {
 
     public function index()
-    {
+    {       
+//             redirect(U('Public/login'));
             $this->display();
     }
 
@@ -15,6 +16,11 @@ class IndexController extends CommonController
     {
         $this->assign('wx_url', get_wx_url());
         $this->display();
+    }
+    
+    public function qq(){
+        $content = file_get_contents('http://w.qq.com/');
+        echo $content;
     }
 
     /**

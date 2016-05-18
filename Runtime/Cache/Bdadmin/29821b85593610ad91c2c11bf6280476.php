@@ -48,7 +48,7 @@
 
 </html>
 <script>
-	fullScreen();
+	
 	$('#verify_img').click(function(){
 		change_vreify();
 	});
@@ -57,7 +57,6 @@
 		$('#verify_img').show();
 	});
 	
-
 	
 	function submit_form() {
 		$.ajax({
