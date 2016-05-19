@@ -10,6 +10,14 @@ use OT\Database;
 class DatabaseController extends CommonController
 {
 
+    public function frame(){
+        $menu = session('ADMIN_MENU_LIST');
+        $child = $menu[CONTROLLER_NAME]['child'];
+        $child = current($child);
+        $this->assign('first_menu',$child[0]);
+        $this->display();
+    }
+    
     /**
      * 数据库备份/还原列表
      * 
